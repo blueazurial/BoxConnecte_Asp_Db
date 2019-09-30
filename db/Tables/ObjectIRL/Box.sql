@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Box]
+(
+	[Id] INT NOT NULL IDENTITY PRIMARY KEY,
+	[NbBoite] INT NOT NULL,
+	[Size] INT NULL,
+	[BoxStatusId] INT NOT NULL REFERENCES [BoxStatus](Id)
+
+)

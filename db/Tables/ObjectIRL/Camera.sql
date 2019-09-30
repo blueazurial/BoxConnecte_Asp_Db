@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[Camera]
+(
+	[Id] INT NOT NULL PRIMARY KEY
+)
