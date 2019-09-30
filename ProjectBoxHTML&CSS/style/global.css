@@ -1,0 +1,35 @@
+
+.conteneur1{
+    display: flex;
+    background-color:teal ;
+    align-content: center;
+
+}
+
+.choix{
+    background-color: coral;
+    border: solid 1px red;
+    margin:10px;
+    padding:5px;
+    height: 200px;
+    width:200px;
+}
+body{
+    /* donne la couleur de fond */
+    background-color:#9ccc65;
+}
+/* j ajoute h1 a body pour que les modification ce fon que sur les h1 qui ce trouve dans le body*/
+body h1{
+    /* donne la couleur de fond */
+    background-color:#9ccc65;
+    /* aligne le text au centre */
+    text-align: center;
+    /*donne la couleur a l'ecriture */
+    color: #3e2723;
+    /*donne le style a l' écriture */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
