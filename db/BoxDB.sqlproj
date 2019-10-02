@@ -61,7 +61,6 @@
     <Folder Include="Procedure" />
     <Folder Include="Tables\People" />
     <Folder Include="Tables\Software" />
-    <Folder Include="Tables\ObjectIRL" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Procedure\SP_Login.sql" />
@@ -74,9 +73,5 @@
     <Build Include="Tables\Software\Order.sql" />
     <Build Include="Tables\Software\OrderStatus.sql" />
     <Build Include="Tables\Software\BoxStatus.sql" />
-    <Build Include="Tables\ObjectIRL\Camera.sql" />
-    <Build Include="Tables\ObjectIRL\Box.sql" />
-    <Build Include="Tables\ObjectIRL\Screen.sql" />
-    <Build Include="Tables\ObjectIRL\SensorBox.sql" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,0 @@
-﻿CREATE TABLE [dbo].[SensorBox]
-(
-	[Id] INT NOT NULL IDENTITY PRIMARY KEY
-)

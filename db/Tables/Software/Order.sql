@@ -10,7 +10,7 @@ CREATE TABLE [dbo].[Order]
 	[DateLimite] DATETIME2  NULL,
 	[CustumerId] INT NOT NULL REFERENCES [Customer](Id),
 	[SellerId] INT NULL REFERENCES [Seller](Id), 
-	[BoxId] INT NOT NULL REFERENCES [Box](Id),
+	
 	[OrderStatusId] INT NOT NULL REFERENCES [OrderStatus](Id)
 
 	

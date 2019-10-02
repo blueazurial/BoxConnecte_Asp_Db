@@ -41,11 +41,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Address.cs" />
+    <Compile Include="Entities\BoxStatus.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\OrderStatus.cs" />
+    <Compile Include="Entities\People.cs" />
+    <Compile Include="Entities\Seller.cs" />
     <Compile Include="Mappers\UniversalDbToEntityMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="repositories\AddressRepository.cs" />
+    <Compile Include="repositories\BaseRepository.cs" />
+    <Compile Include="repositories\BoxStatusRepository.cs" />
+    <Compile Include="repositories\CustomerRepository.cs" />
+    <Compile Include="repositories\OrderRepository.cs" />
+    <Compile Include="repositories\OrderStatusRepository.cs" />
+    <Compile Include="repositories\PeopleRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entities\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
