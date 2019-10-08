@@ -61,6 +61,7 @@
     <Folder Include="Procedure" />
     <Folder Include="Tables\People" />
     <Folder Include="Tables\Software" />
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Procedure\SP_Login.sql" />
