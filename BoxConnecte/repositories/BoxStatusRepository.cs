@@ -1,4 +1,5 @@
 ﻿using BoxConnecte.Entities;
+using DB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,10 @@ namespace BoxConnecte.repositories
     {
         public override bool Delete(int id)
         {
-            throw new NotImplementedException();
+            string query = "DELETE FROM BoxeStatus WHERE Id = @Id";
+            Command cmd = new Command(query);
+            cmd.Parameters.Add("@Id", id);
+            return _Connection.ExecuteNonQuery(cmd) == 1;
         }
 
         public override BoxStatus Get(int id)
@@ -24,7 +28,7 @@ namespace BoxConnecte.repositories
             throw new NotImplementedException();
         }
 
-        public override int Insert(BoxStatus entity)
+        public override int Insert(BoxStatus boxeStatus)
         {
             throw new NotImplementedException();
         }

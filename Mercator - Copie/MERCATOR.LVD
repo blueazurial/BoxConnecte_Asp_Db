@@ -1,0 +1,36 @@
+Create-A-Label Tools: Label Variable Definitions File
+
+File Name                     D:\DemoMer\MercatorFulLV4\MERCATOR.LBL
+Printer:                      Zebra LP2824 on LPT1:
+
+Field Name:                   "BARCODE1"
+Data Source:                  When printed
+Prompt:                       ""
+String Length:                10
+Required:                     No
+Must Fill:                    No
+Field Type:                   Bar code (Code 128 (Auto-Switching))
+
+Field Name:                   "TEXT1"
+Data Source:                  When printed
+Prompt:                       ""
+String Length:                30
+Required:                     No
+Must Fill:                    No
+Field Type:                   Text
+
+Field Name:                   "TEXT2"
+Data Source:                  When printed
+Prompt:                       ""
+String Length:                15
+Required:                     No
+Must Fill:                    No
+Field Type:                   Text
+
+Field Name:                   "TEXT3"
+Data Source:                  When printed
+Prompt:                       ""
+String Length:                15
+Required:                     No
+Must Fill:                    No
+Field Type:                   Text

@@ -1,0 +1,147 @@
+******************************************************************
+Versions 1.01 to 1.03
+******************************************************************
+Features:
+- PDF file concatenation feature
+- Interface with Windows Programming languages including VB/VBA
+- Improved output file selection dialog box
+- Image optimizations
+- File size optimizations
+
+Bug fixes:
+- Corrected problem with output file generated as read-only file
+- Problems with 1 bit or one color bitmaps
+- Problems enumerating True Type fonts in some applications
+- Problems with handling large fonts
+- Problems with dashed or dotted lines
+- Problems with very large PDF files
+
+******************************************************************
+Version 1.04
+******************************************************************
+Features:
+- Flate compression added for text, graphics and images. File size reduced to 30 to 40% of their original size.
+- Optimized clipping operations in Windows 3.1, 95 and 98 versions.
+
+Bug fixes:
+- Solved problems with long file names under Windows 95/98.
+
+******************************************************************
+Version 1.05
+******************************************************************
+Bug fixes:
+- Solved memory leak problems that caused blue screens after intensive use.
+- Solved file concatenation problems in the NT version.
+- Some colors were rendered incorrectly with the 95/98 version.
+- Added an option to disable page content compression from the DLL interface.
+
+******************************************************************
+Version 1.06
+******************************************************************
+Features:
+- Added Font Embedding capability.
+
+Bug fixes:
+- Solved installation problems with Windows NT service pack 5.
+- Inceased the limit on the maximum number of pages in all versions.
+
+******************************************************************
+Version 1.07
+******************************************************************
+Features:
+- Interface to the driver enhanced with new functions and ActiveX support
+
+Bug fixes:
+- Corrected problem with some images being inverted or not clipped with the 95/98 version
+- Problem with incorrect character spacing or font sizes
+- Problems with generated files being corrupted under one of these conditions : large bitmaps, font embedded, ResetDC being called, concatenation for NT users not having Printer Administration rights.
+- Solved problem sending PDF files to network drives with the NT version
+- Strikout or underlined text printed incorrectly with some applications
+- Empty pages not being printed with the 95/98 version
+- Symbol fonts are now handled correctly
+- Default paper size now depends on the country (Letter size for US and Canada)
+
+******************************************************************
+Version 1.5
+******************************************************************
+Features:
+- Added JPEG and 256 color compression algorithm
+- Option to broadcast messages when PDF documents are generated
+- Added the capability to easily add bookmarks to the PDF document
+- Improved user interface for both Windows 95/98 and NT
+- Added low 75 and 150 DPI resolutions
+- Physical margins configurable through user interface or programming
+- Ability to set output file name through user interface
+- Optimized file sizes with some applications
+
+Bug fixes:
+- Gray-scale option caused problems with 24 bits images under Windows NT
+- Character spacing problems with some applications solved
+- Concatenation failed with some applications under NT
+- Blue screen problems with some applications and large documents
+- Image alignement problems caused some images to be completely blurred
+- Removed embedding of Arial and Times New Roman fonts
+
+******************************************************************
+Version 1.51
+******************************************************************
+Bug fixes:
+- Solved problem with color inverted 1 bit images
+
+******************************************************************
+Version 1.52
+******************************************************************
+Bug fixes:
+- Setting margins under NT produced unexpected results
+- Removed limitation on minimum and maximum page sizes under NT
+
+******************************************************************
+Version 1.53
+******************************************************************
+Bug fixes:
+- Developer version fails to load under Win 2000 with certain programming environments (VFP, ...)
+- Under NT/2000, if file did not already exist, concatenation failed instead of creating a new file
+- Under NT/2000, concatenation did not work if the file name was set but other means than SetDefaultFileName
+- Improved support for Adobe Pagemaker(r) under Windows 95/98
+- Windows 2000, installation procedure modified to fix problem with "File Save As" being hidden behind the calling application
+
+******************************************************************
+Version 1.54
+******************************************************************
+Bug fixes:
+- 8 bits/pixel images corrupted under Windows NT/2000
+- Corrected problems with pattern filling under Windows 95/98
+
+******************************************************************
+Version 1.55
+******************************************************************
+Features:
+- Ability to add watermarks to each page programmatically
+- Common Driver Interface is now MTS compatible
+
+Bug fixes:
+- Activated the main property page for the developer version under 95/98 to make some applications happy
+
+******************************************************************
+Version 1.56
+******************************************************************
+Features:
+- Added the ability to embed only a subset of a TrueType font to reduce file size
+- Font resources moved from document scope to page scope to make some external tools happy
+- Added new options to control the output file name and behaviour when file existed (overwrite, concatenate, append datetime or ID ...)
+
+Bug fixes:
+- Corrected problems concatenating files containing bookmarks
+- Improved character output precision for word processing applications
+- Improved compatibility with a number of applications
+- Solved problems with files lost when concatenating
+- Solved problems with Symbol fonts not being rendered correctly under Windows 2000
+
+******************************************************************
+Version 1.57
+******************************************************************
+Bug fixes:
+- Solved problems with rotated fonts under NT/2000
+- Solved problems with large fonts under 95/98
+
+

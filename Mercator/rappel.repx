@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReferencedAssemblies="System.dll&#13;&#10;System.Drawing.dll&#13;&#10;System.Windows.Forms.dll&#13;&#10;System.Data.dll&#13;&#10;System.Xml.dll&#13;&#10;MercatorTunnel.dll&#13;&#10;MercatorUi.dll" ReportInfo.Created="06/07/2012 17:51:39" ReportInfo.Modified="06/22/2012 10:28:22" ReportInfo.CreatorVersion="1.0.0.0">
+  <Dictionary>
+    <TableDataSource Name="RemindersHeaders" ReferenceName="MercatorDataSet_Reminder.RemindersHeaders" DataType="System.Int32" Enabled="true">
+      <Column Name="ID" DataType="System.Guid"/>
+      <Column Name="ID_CLI" DataType="System.String"/>
+      <Column Name="id_dev" DataType="System.String"/>
+      <Column Name="dev_nom" DataType="System.String"/>
+      <Column Name="echu" DataType="System.Double"/>
+      <Column Name="echu_dv" DataType="System.Double"/>
+      <Column Name="amende" DataType="System.Double"/>
+      <Column Name="amende_dv" DataType="System.Double"/>
+      <Column Name="interet" DataType="System.Double"/>
+      <Column Name="interet_dv" DataType="System.Double"/>
+      <Column Name="aechoir" DataType="System.Double"/>
+      <Column Name="aechoir_dv" DataType="System.Double"/>
+      <Column Name="solde" DataType="System.Double"/>
+      <Column Name="id_param" DataType="System.String"/>
+      <Column Name="sel" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="n_rappel" DataType="System.Int16"/>
+      <Column Name="date_ref" DataType="System.DateTime"/>
+      <Column Name="c_nom" DataType="System.String"/>
+      <Column Name="titre" DataType="System.String"/>
+      <Column Name="haut" DataType="System.String"/>
+      <Column Name="bas" DataType="System.String"/>
+      <Column Name="signature" DataType="System.String"/>
+      <Column Name="sortie" DataType="System.Int16"/>
+      <Column Name="archiv" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="od" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="pr_echu" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ID1" DataType="System.String"/>
+      <Column Name="NOM" DataType="System.String"/>
+      <Column Name="CAT_CLI" DataType="System.String"/>
+      <Column Name="max_rappel" DataType="System.Int32"/>
+      <Column Name="layoutx" DataType="System.String"/>
+      <Column Name="C_NOM" DataType="System.String"/>
+      <Column Name="C_CLE1" DataType="System.String"/>
+      <Column Name="C_CLE2" DataType="System.String"/>
+      <Column Name="C_CLE3" DataType="System.String"/>
+      <Column Name="C_ID" DataType="System.String"/>
+      <Column Name="C_TYP_FORM" DataType="System.Int16"/>
+      <Column Name="C_QUALITE" DataType="System.String"/>
+      <Column Name="C_CONTACT" DataType="System.String"/>
+      <Column Name="C_ADRESSE" DataType="System.String"/>
+      <Column Name="C_ADRESSE2" DataType="System.String"/>
+      <Column Name="C_CODEP" DataType="System.String"/>
+      <Column Name="C_VILLE" DataType="System.String"/>
+      <Column Name="C_PAYS" DataType="System.String"/>
+      <Column Name="C_NUM_TEL" DataType="System.String"/>
+      <Column Name="C_NUM_FAX" DataType="System.String"/>
+      <Column Name="C_NUM_GSM" DataType="System.String"/>
+      <Column Name="C_REGIME" DataType="System.Int16"/>
+      <Column Name="C_CAT1" DataType="System.String"/>
+      <Column Name="C_CAT2" DataType="System.String"/>
+      <Column Name="C_CAT3" DataType="System.String"/>
+      <Column Name="C_TARIF" DataType="System.Int16"/>
+      <Column Name="C_ID_DEV" DataType="System.String"/>
+      <Column Name="C_NUM_TVA" DataType="System.String"/>
+      <Column Name="C_PAIEM" DataType="System.String"/>
+      <Column Name="C_CREATION" DataType="System.DateTime"/>
+      <Column Name="C_MODIF" DataType="System.DateTime"/>
+      <Column Name="C_ID_REP" DataType="System.String"/>
+      <Column Name="C_COMMENT" DataType="System.String"/>
+      <Column Name="C_BLOQUE" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="C_LANGUE" DataType="System.String"/>
+      <Column Name="C_CONDIT" DataType="System.Int32"/>
+      <Column Name="C_ID_MAGA" DataType="System.String"/>
+      <Column Name="C_REMISE" DataType="System.Double"/>
+      <Column Name="C_ESCPTE" DataType="System.Double"/>
+      <Column Name="C_FACT_NOM" DataType="System.String"/>
+      <Column Name="C_FACT_AD1" DataType="System.String"/>
+      <Column Name="C_FACT_AD2" DataType="System.String"/>
+      <Column Name="C_FACT_CP" DataType="System.String"/>
+      <Column Name="C_FACT_VIL" DataType="System.String"/>
+      <Column Name="C_FACT_PAY" DataType="System.String"/>
+      <Column Name="C_RAISON" DataType="System.String"/>
+      <Column Name="C_FID_D1" DataType="System.DateTime"/>
+      <Column Name="C_FID_D2" DataType="System.DateTime"/>
+      <Column Name="C_FID_D3" DataType="System.DateTime"/>
+      <Column Name="C_FID_D4" DataType="System.DateTime"/>
+      <Column Name="C_FID_D5" DataType="System.DateTime"/>
+      <Column Name="C_FID_D6" DataType="System.DateTime"/>
+      <Column Name="C_FID_D7" DataType="System.DateTime"/>
+      <Column Name="C_FID_D8" DataType="System.DateTime"/>
+      <Column Name="C_FID_D9" DataType="System.DateTime"/>
+      <Column Name="C_FID_D10" DataType="System.DateTime"/>
+      <Column Name="C_FID_V1" DataType="System.Double"/>
+      <Column Name="C_FID_V2" DataType="System.Double"/>
+      <Column Name="C_FID_V3" DataType="System.Double"/>
+      <Column Name="C_FID_V4" DataType="System.Double"/>
+      <Column Name="C_FID_V5" DataType="System.Double"/>
+      <Column Name="C_FID_V6" DataType="System.Double"/>
+      <Column Name="C_FID_V7" DataType="System.Double"/>
+      <Column Name="C_FID_V8" DataType="System.Double"/>
+      <Column Name="C_FID_V9" DataType="System.Double"/>
+      <Column Name="C_FID_V10" DataType="System.Double"/>
+      <Column Name="C_MEMO" DataType="System.String"/>
+      <Column Name="C_CREDIT" DataType="System.Double"/>
+      <Column Name="C_ENCOURS" DataType="System.Double"/>
+      <Column Name="C_IDCOMPTA" DataType="System.String"/>
+      <Column Name="C_EMAIL" DataType="System.String"/>
+      <Column Name="C_REMISE2" DataType="System.Double"/>
+      <Column Name="C_CTACT" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="C_OUTLOOK" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="C_NON_TVA" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="C_FILES" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="C_SOLDE" DataType="System.Double"/>
+      <Column Name="C_DER_NRAP" DataType="System.Int16"/>
+      <Column Name="C_DER_DRAP" DataType="System.DateTime"/>
+      <Column Name="C_NON_RAP" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="C_NUM_BQE" DataType="System.String"/>
+      <Column Name="C_ACT" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="C_IMAGE" DataType="System.Byte[]" BindableControl="Picture"/>
+      <Column Name="C_NUM_BQE2" DataType="System.String"/>
+      <Column Name="C_URL" DataType="System.String"/>
+      <Column Name="C_DEPOTS" DataType="System.String"/>
+      <Column Name="C_ID_TVA" DataType="System.String"/>
+      <Column Name="C_COMPTEV" DataType="System.String"/>
+      <Column Name="C_I_TPT" DataType="System.String"/>
+      <Column Name="C_I_PAYS" DataType="System.String"/>
+      <Column Name="C_INTRASTV" DataType="System.String"/>
+      <Column Name="C_LIBRE1" DataType="System.String"/>
+      <Column Name="C_ID_PROJ" DataType="System.String"/>
+      <Column Name="C_FID_D11" DataType="System.DateTime"/>
+      <Column Name="C_FID_D12" DataType="System.DateTime"/>
+      <Column Name="C_FID_D13" DataType="System.DateTime"/>
+      <Column Name="C_FID_D14" DataType="System.DateTime"/>
+      <Column Name="C_FID_D15" DataType="System.DateTime"/>
+      <Column Name="C_FID_V11" DataType="System.Double"/>
+      <Column Name="C_FID_V12" DataType="System.Double"/>
+      <Column Name="C_FID_V13" DataType="System.Double"/>
+      <Column Name="C_FID_V14" DataType="System.Double"/>
+      <Column Name="C_FID_V15" DataType="System.Double"/>
+      <Column Name="C_LIV_SEUL" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="C_WARNING" DataType="System.String"/>
+      <Column Name="C_OPERATIO" DataType="System.String"/>
+      <Column Name="C_DATE" DataType="System.DateTime"/>
+      <Column Name="C_NUM_BQE3" DataType="System.String"/>
+      <Column Name="C_N_BANK" DataType="System.Int16"/>
+      <Column Name="C_IMAGEBD" DataType="System.Byte[]" BindableControl="Picture"/>
+    </TableDataSource>
+    <TableDataSource Name="RemindersDetails" ReferenceName="MercatorDataSet_Reminder.RemindersDetails" DataType="System.Int32" Enabled="true">
+      <Column Name="ID" DataType="System.Guid"/>
+      <Column Name="ID_CLI" DataType="System.String"/>
+      <Column Name="NUM_EX" DataType="System.Byte"/>
+      <Column Name="JOURNAL" DataType="System.String"/>
+      <Column Name="PIECE" DataType="System.Decimal"/>
+      <Column Name="DL_ID" DataType="System.String"/>
+      <Column Name="type" DataType="System.Int16"/>
+      <Column Name="id_dev" DataType="System.String"/>
+      <Column Name="dev_nom" DataType="System.String"/>
+      <Column Name="date" DataType="System.DateTime"/>
+      <Column Name="echeance" DataType="System.DateTime"/>
+      <Column Name="echu" DataType="System.Double"/>
+      <Column Name="echu_dv" DataType="System.Double"/>
+      <Column Name="amende" DataType="System.Double"/>
+      <Column Name="amende_dv" DataType="System.Double"/>
+      <Column Name="interet" DataType="System.Double"/>
+      <Column Name="interet_dv" DataType="System.Double"/>
+      <Column Name="aechoir" DataType="System.Double"/>
+      <Column Name="aechoir_dv" DataType="System.Double"/>
+      <Column Name="lettrage" DataType="System.Decimal"/>
+      <Column Name="solde" DataType="System.Double"/>
+      <Column Name="commentair" DataType="System.String"/>
+      <Column Name="id_param" DataType="System.String"/>
+      <Column Name="sel" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="n_rappel" DataType="System.Int16"/>
+      <Column Name="date_ref" DataType="System.DateTime"/>
+      <Column Name="rejet" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="APayer" DataType="System.Double" PropName="Column" Calculated="true" Expression="FormatNumber([Total echu]+[Total amende]+[Total interets],[DEC_DEV_C])"/>
+    </TableDataSource>
+    <TableDataSource Name="Logo" ReferenceName="MercatorDataSet_Reminder.Logo" DataType="System.Int32" Enabled="true">
+      <Column Name="LogoMercator" DataType="System.Drawing.Image, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" BindableControl="Picture"/>
+    </TableDataSource>
+    <TableDataSource Name="ParamIdentif" ReferenceName="MercatorDataSet_Reminder.ParamIdentif" DataType="System.Int32" Enabled="true">
+      <Column Name="IDT_NOM" DataType="System.String"/>
+      <Column Name="IDT_AD1" DataType="System.String"/>
+      <Column Name="IDT_AD2" DataType="System.String"/>
+      <Column Name="IDT_CP" DataType="System.String"/>
+      <Column Name="IDT_VILLE" DataType="System.String"/>
+      <Column Name="IDT_NUM" DataType="System.String"/>
+      <Column Name="IDT_ISOPAYS" DataType="System.String"/>
+      <Column Name="IDT_TEL" DataType="System.String"/>
+      <Column Name="IDT_FAX" DataType="System.String"/>
+      <Column Name="IDT_SIRET" DataType="System.String"/>
+      <Column Name="IDT_TVA" DataType="System.String"/>
+      <Column Name="IDT_BANQUE" DataType="System.String"/>
+      <Column Name="IDT_RC" DataType="System.String"/>
+      <Column Name="IDT_PUB1" DataType="System.String"/>
+      <Column Name="IDT_PUB2" DataType="System.String"/>
+      <Column Name="IDT_PUB3" DataType="System.String"/>
+      <Column Name="IDT_PUB4" DataType="System.String"/>
+      <Column Name="IDT_MEMO" DataType="System.String"/>
+      <Column Name="IDT_CODE" DataType="System.String"/>
+      <Column Name="IDT_MAIL" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="CurrentUser" ReferenceName="MercatorDataSet_Reminder.CurrentUser" DataType="System.Int32" Enabled="true">
+      <Column Name="ID" DataType="System.String"/>
+      <Column Name="CODE" DataType="System.String"/>
+      <Column Name="NOM" DataType="System.String"/>
+      <Column Name="LANGUE" DataType="System.String"/>
+      <Column Name="ID_DEPOT" DataType="System.String"/>
+      <Column Name="ID_REP" DataType="System.String"/>
+      <Column Name="STOCK_VISU" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="STOCK_MOD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="CLI_VISU" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="CLI_MOD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="FOU_VISU" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="FOU_MOD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="VEN_VISU" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="VEN_MOD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACH_VISU" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACH_MOD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="AIDE" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="GESTION" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="OUTILS" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="MAX_REMISE" DataType="System.Double"/>
+      <Column Name="PRIX_MOD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="CRYPT" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="SEQ_DEF" DataType="System.String"/>
+      <Column Name="NIVEAU" DataType="System.Int16"/>
+      <Column Name="BLOQ_DATE" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_REP" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_DEP" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T1" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T2" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T3" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T4" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T5" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T6" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T7" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T8" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T9" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T10" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T11" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T12" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T13" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G1" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G2" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G3" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G4" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G5" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G6" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G7" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G8" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G9" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G10" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G11" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G12" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G13" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T0" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_T14" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="PHOTO" DataType="System.String"/>
+      <Column Name="TOUCH" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_TIR" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="TACT_MOD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="TACT_VISU" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_EXP" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_IMP" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="timestamp_column" DataType="System.Byte[]" BindableControl="Picture"/>
+      <Column Name="id_depots" DataType="System.String"/>
+      <Column Name="DEPT" DataType="System.String"/>
+      <Column Name="BLOQ_T15" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_G14" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="GESCOM" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="COMPTA" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="CPTA1_MOD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="CPTA1_VISU" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="CPTA2_MOD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="CPTA2_VISU" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="CPTA3_MOD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="CPTA3_VISU" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="CPTA4_MOD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="CPTA4_VISU" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="GEN_mod" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="GEN_visu" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ANA_mod" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ANA_visu" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="IMM_mod" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="IMM_visu" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_C1" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_C2" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_C3" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_C4" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_C5" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_C6" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_C7" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_C8" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="FRXPROTECT" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_MODTD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="AIDE_URL" DataType="System.String"/>
+      <Column Name="AIDE_TYPE" DataType="System.Byte"/>
+      <Column Name="BLOQ_TD0" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_TD1" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_TD2" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_TD3" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ID_GROUPES" DataType="System.String"/>
+      <Column Name="CRM_NOM" DataType="System.String"/>
+      <Column Name="CRM_MAIL" DataType="System.String"/>
+      <Column Name="LOOK_NOM9" DataType="System.String"/>
+      <Column Name="LOOK_EID9" DataType="System.String"/>
+      <Column Name="LOOK_NOM10" DataType="System.String"/>
+      <Column Name="LOOK_EID10" DataType="System.String"/>
+      <Column Name="LOOK_NOM13" DataType="System.String"/>
+      <Column Name="LOOK_EID13" DataType="System.String"/>
+      <Column Name="XLEAD_mod" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="XLEAD_visu" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_CLIM" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_CLIV" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_FOUM" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_FOUV" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_GENM" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_GENV" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_ANAM" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_ANAV" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_IMMM" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_IMMV" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_STOCKM" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_STOCKV" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_TACTM" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_TACTV" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_XLEADM" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_XLEADV" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ID_DICOS" DataType="System.String"/>
+      <Column Name="ID_DROITSM" DataType="System.String"/>
+      <Column Name="ID_DROITSV" DataType="System.String"/>
+      <Column Name="CRM_SIGNAT" DataType="System.String"/>
+      <Column Name="CRM_ALARM" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="CRM_WAV" DataType="System.String"/>
+      <Column Name="LIBRE1" DataType="System.String"/>
+      <Column Name="LIBRE2" DataType="System.String"/>
+      <Column Name="LIBRE3" DataType="System.String"/>
+      <Column Name="LIBRE4" DataType="System.String"/>
+      <Column Name="LIBRE5" DataType="System.String"/>
+      <Column Name="LIBRE6" DataType="System.String"/>
+      <Column Name="LIBRE7" DataType="System.String"/>
+      <Column Name="LIBRE8" DataType="System.String"/>
+      <Column Name="LIBRE9" DataType="System.String"/>
+      <Column Name="BLOQ_C9" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BUDG_TOT" DataType="System.String"/>
+      <Column Name="BLOQ_MAIL" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_BACK" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_EMIT" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_RECEI" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="RIB_GESCOM" DataType="System.String"/>
+      <Column Name="RIB_CPTA" DataType="System.String"/>
+      <Column Name="RIB_CRM" DataType="System.String"/>
+      <Column Name="PREST_GUI" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ID_YPREST" DataType="System.String"/>
+      <Column Name="BLOQ_GPRES" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P1" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P2" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P3" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P4" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P5" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P6" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P7" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P8" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P9" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P10" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P11" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P12" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P13" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P14" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P15" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P16" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P17" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P18" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P19" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P20" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P21" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P22" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P23" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P24" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P25" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P26" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P27" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P28" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P29" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_P30" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_RIB" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_PWD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="RIB_CUSTOM" DataType="System.String"/>
+      <Column Name="SUPPORT" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_CH_PL" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="LICENCE" DataType="System.String"/>
+      <Column Name="DATE_MDY" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="YPREST_mod" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="YPRES_visu" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_YPRESM" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_YPRESV" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="PROJ_mod" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="PROJ_visu" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_PROJM" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_PROJV" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="BLOQ_RESET" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="EMB_MOD" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="EMB_VISU" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_EMBV" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ACT_EMBM" DataType="System.Boolean" BindableControl="CheckBox"/>
+    </TableDataSource>
+    <Relation Name="RemindersHeaders_RemindersDetails" ParentDataSource="RemindersHeaders" ChildDataSource="RemindersDetails" ParentColumns="ID_CLI" ChildColumns="ID_CLI" Enabled="true"/>
+    <Parameter Name="DEC_DEV_B" DataType="System.Int32"/>
+    <Parameter Name="DEC_DEV_C" DataType="System.Int32"/>
+    <Parameter Name="N_DEC_Q" DataType="System.Int32"/>
+    <Parameter Name="N_DEC_P" DataType="System.Int32"/>
+    <Parameter Name="N_FIDEL" DataType="System.Int32"/>
+    <Parameter Name="NOM_UTIL" DataType="System.String"/>
+    <Parameter Name="REP_DATA" DataType="System.String"/>
+    <Parameter Name="DEPOT_DEF" DataType="System.String"/>
+    <Parameter Name="NOM_SITE" DataType="System.String"/>
+    <Parameter Name="DEV_BAS" DataType="System.String"/>
+    <Parameter Name="ID_DEV_BAS" DataType="System.String"/>
+    <Parameter Name="Langue" DataType="System.String"/>
+    <Parameter Name="MercatorAppl" DataType="System.String"/>
+    <Parameter Name="MercatorOptions" DataType="System.String"/>
+    <Parameter Name="PictBase" DataType="System.String"/>
+    <Parameter Name="PictCpta" DataType="System.String"/>
+    <Parameter Name="PictCptaDC" DataType="System.String"/>
+    <Parameter Name="PictQ" DataType="System.String"/>
+    <Parameter Name="PictP" DataType="System.String"/>
+    <Total Name="Total echu" Expression="[RemindersDetails.echu]" Evaluator="Data2" PrintOn="GroupFooter3"/>
+    <Total Name="Total amende" Expression="[RemindersDetails.amende]" Evaluator="Data2" PrintOn="GroupFooter3"/>
+    <Total Name="Total interets" Expression="[RemindersDetails.interet]" Evaluator="Data2" PrintOn="GroupFooter3"/>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <PageHeaderBand Name="PageHeader1" Width="718.2"/>
+    <GroupHeaderBand Name="GroupHeader1" Top="4" Width="718.2" StartNewPage="true" Condition="[RemindersHeaders.ID_CLI]">
+      <DataBand Name="Data1" Top="8" Width="718.2" Height="500.85" StartNewPage="true" DataSource="RemindersHeaders">
+        <TextObject Name="Text1" Left="378" Top="132.3" Width="272.15" Height="18.9" Text="[RemindersHeaders.C_NOM]"/>
+        <TextObject Name="Text2" Left="378" Top="160.65" Width="272.15" Height="18.9" Text="[RemindersHeaders.C_ADRESSE]"/>
+        <TextObject Name="Text3" Left="378" Top="179.55" Width="272.15" Height="18.9" Text="[RemindersHeaders.C_ADRESSE2]"/>
+        <TextObject Name="Text4" Left="378" Top="198.45" Width="73.7" Height="18.9" Text="[RemindersHeaders.C_CODEP]"/>
+        <TextObject Name="Text6" Left="453.6" Top="198.45" Width="187.1" Height="18.9" Text="[RemindersHeaders.C_VILLE]"/>
+        <TextObject Name="Text18" Left="9.45" Top="132.3" Width="236.25" Height="18.9" Text="[ParamIdentif.IDT_NOM]" Font="Arial, 8pt, style=Bold"/>
+        <TextObject Name="Text19" Left="9.45" Top="160.65" Width="236.25" Height="18.9" Text="[ParamIdentif.IDT_AD1]" Font="Arial, 8pt"/>
+        <TextObject Name="Text20" Left="9.45" Top="179.55" Width="236.25" Height="18.9" Text="[ParamIdentif.IDT_AD2]" Font="Arial, 8pt"/>
+        <TextObject Name="Text21" Left="9.45" Top="321.3" Width="359.1" Height="18.9" Text="[RemindersHeaders.titre]" Font="Arial, 12pt, style=Bold"/>
+        <TextObject Name="Text25" Left="9.45" Top="368.55" Width="699.3" Height="122.85" Text="[RemindersHeaders.haut]" WordWrap="true"/>
+        <PictureObject Name="Picture1" Left="9.45" Top="9.45" Width="94.5" Height="94.5" DataColumn="Logo.LogoMercator"/>
+        <TextObject Name="Text22" Left="9.45" Top="198.45" Width="236.25" Height="18.9" Text="[ParamIdentif.IDT_CP] [ParamIdentif.IDT_VILLE]" Font="Arial, 8pt"/>
+        <TextObject Name="Text26" Left="9.45" Top="226.8" Width="236.25" Height="18.9" Text="Tél : [ParamIdentif.IDT_TEL]" Font="Arial, 8pt"/>
+        <TextObject Name="Text27" Left="9.45" Top="245.7" Width="236.25" Height="18.9" Text="TVA : [ParamIdentif.IDT_TVA]" Font="Arial, 8pt"/>
+        <TextObject Name="Text24" Left="614.25" Top="321.3" Width="94.5" Height="18.9" Text="[FormatDateTime([Date],&quot;shortdate&quot;)]" HorzAlign="Right"/>
+        <TextObject Name="Text5" Left="378" Top="217.35" Width="236.25" Height="18.9" Text="[RemindersHeaders.C_PAYS]"/>
+        <GroupHeaderBand Name="GroupHeader3" Top="512.85" Width="718.2" Height="18.9" Condition="[RemindersDetails.dev_nom]">
+          <TableObject Name="Table1" Left="9.45" Width="699.18" Height="18.9" Border.Lines="Right, Top, Bottom" Fill.Color="Gainsboro">
+            <TableColumn Name="Column1" Width="99.21"/>
+            <TableColumn Name="Column2" Width="70.86"/>
+            <TableColumn Name="Column3" Width="70.86"/>
+            <TableColumn Name="Column4" Width="80.31"/>
+            <TableColumn Name="Column5" Width="80.31"/>
+            <TableColumn Name="Column6" Width="80.31"/>
+            <TableColumn Name="Column7" Width="80.31"/>
+            <TableColumn Name="Column8" Width="137.01"/>
+            <TableRow Name="Row1">
+              <TableCell Name="Cell1" Border.Lines="Left" Text="[Iif_langue([CurrentUser.LANGUE],&quot;Dokument&quot;,&quot;Document&quot;,&quot;Document&quot;,&quot;Document&quot;)]  " HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+              <TableCell Name="Cell2" Border.Lines="Left" Text="[Iif_langue([CurrentUser.LANGUE],&quot;Datum&quot;,&quot;Date&quot;,&quot;Datum&quot;,&quot;Date&quot;)]  " HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+              <TableCell Name="Cell3" Border.Lines="Left" Text="[Iif_langue([CurrentUser.LANGUE],&quot;Ablaufdat.&quot;,&quot;Due date&quot;,&quot;Vervald.&quot;,&quot;Echéance&quot;)]  " HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+              <TableCell Name="Cell4" Border.Lines="Left" Text="[Iif_langue([CurrentUser.LANGUE],&quot;Abgelaufen&quot;,&quot;Due&quot;,&quot;Vervallend&quot;,&quot;Echu&quot;)]  " HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+              <TableCell Name="Cell5" Border.Lines="Left" Text="[Iif_langue([CurrentUser.LANGUE],&quot;Geldstrafe&quot;,&quot;Penalty&quot;,&quot;Straf&quot;,&quot;Amende&quot;)]  " HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+              <TableCell Name="Cell26" Border.Lines="Left" Text="[Iif_langue([CurrentUser.LANGUE],&quot;Zins&quot;,&quot;Interests&quot;,&quot;'Intresten&quot;,&quot;Intérêts&quot;)]  " HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+              <TableCell Name="Cell27" Border.Lines="Left" Text="[Iif_langue([CurrentUser.LANGUE],&quot;Abzulaufen&quot;,&quot;Future&quot;,&quot;Niet Verv.&quot;,&quot;A échoir&quot;)]  " HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+              <TableCell Name="Cell28" Border.Lines="Left" Text="[Iif_langue([CurrentUser.LANGUE],&quot;Kommentar&quot;,&quot;Comment&quot;,&quot;Commentaar&quot;,&quot;Commentaire&quot;)]" HorzAlign="Center" Font="Arial, 8pt, style=Bold"/>
+            </TableRow>
+          </TableObject>
+          <DataBand Name="Data2" Top="535.75" Width="718.2" Height="18.9" DataSource="RemindersDetails" ParentIdColumn="RemindersHeaders.ID_CLI">
+            <TableObject Name="Table2" Left="9.45" Width="699.18" Height="18.9" Border.Lines="Right, Bottom">
+              <TableColumn Name="Column9" Width="99.21"/>
+              <TableColumn Name="Column10" Width="70.86"/>
+              <TableColumn Name="Column11" Width="70.86"/>
+              <TableColumn Name="Column12" Width="80.31"/>
+              <TableColumn Name="Column13" Width="80.31"/>
+              <TableColumn Name="Column14" Width="80.31"/>
+              <TableColumn Name="Column15" Width="80.31"/>
+              <TableColumn Name="Column16" Width="137.01"/>
+              <TableRow Name="Row2">
+                <TableCell Name="Cell29" Border.Lines="Left" Text="[RemindersDetails.JOURNAL] [RemindersDetails.PIECE]" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell30" Border.Lines="Left" Text="[FormatDateTime([RemindersDetails.date],&quot;shortdate&quot;)]" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell31" Border.Lines="Left" Text="[FormatDateTime([RemindersDetails.echeance],&quot;shortdate&quot;)]" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell32" Border.Lines="Left" Text="[FormatNumber([RemindersDetails.echu],[DEC_DEV_C])]" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell33" Border.Lines="Left" Text="[FormatNumber([RemindersDetails.amende],[DEC_DEV_C])]" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell34" Border.Lines="Left" Text="[FormatNumber([RemindersDetails.interet],[DEC_DEV_C])]" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell35" Border.Lines="Left" Text="[FormatNumber([RemindersDetails.aechoir],[DEC_DEV_C])]" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell36" Border.Lines="Left" Text="[RemindersDetails.commentair]" HorzAlign="Center" Font="Arial, 8pt"/>
+              </TableRow>
+            </TableObject>
+          </DataBand>
+          <GroupFooterBand Name="GroupFooter3" Top="558.65" Width="718.2" Height="47.25">
+            <TableObject Name="Table3" Left="9.45" Width="699.18" Height="18.9">
+              <TableColumn Name="Column17" Width="99.21"/>
+              <TableColumn Name="Column18" Width="70.86"/>
+              <TableColumn Name="Column19" Width="70.86"/>
+              <TableColumn Name="Column20" Width="80.31"/>
+              <TableColumn Name="Column21" Width="80.31"/>
+              <TableColumn Name="Column22" Width="80.31"/>
+              <TableColumn Name="Column23" Width="80.31"/>
+              <TableColumn Name="Column24" Width="137.01"/>
+              <TableRow Name="Row3">
+                <TableCell Name="Cell37" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell38" Border.Lines="Left, Bottom" Text="[Iif_langue([CurrentUser.LANGUE],&quot;Gesamt :&quot;,&quot;Total :&quot;,&quot;Totaal :&quot;,&quot;Total :&quot;)]" HorzAlign="Right" Font="Arial, 8pt, style=Bold" ColSpan="2"/>
+                <TableCell Name="Cell39" Border.Lines="Left" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell40" Border.Lines="Left, Right, Bottom" Text="[FormatNumber([Total echu],[DEC_DEV_C])]" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell41" Border.Lines="Left, Right, Bottom" Text="[FormatNumber([Total amende],[DEC_DEV_C])]" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell42" Border.Lines="Left, Right, Bottom" Text="[FormatNumber([Total interets],[DEC_DEV_C])]" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell43" Border.Lines="Left, Right, Bottom" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell44" Border.Lines="Left" HorzAlign="Center" Font="Arial, 8pt"/>
+              </TableRow>
+            </TableObject>
+            <TableObject Name="Table4" Left="9.45" Top="18.9" Width="699.18" Height="18.9">
+              <TableColumn Name="Column25" Width="99.21"/>
+              <TableColumn Name="Column26" Width="70.86"/>
+              <TableColumn Name="Column27" Width="70.86"/>
+              <TableColumn Name="Column28" Width="80.31"/>
+              <TableColumn Name="Column29" Width="80.31"/>
+              <TableColumn Name="Column30" Width="80.31"/>
+              <TableColumn Name="Column31" Width="80.31"/>
+              <TableColumn Name="Column32" Width="137.01"/>
+              <TableRow Name="Row4">
+                <TableCell Name="Cell45" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell46" Border.Lines="Left, Top, Bottom" Text="[Iif_langue([CurrentUser.LANGUE],&quot;ZU ZAHLEN :&quot;,&quot;TO PAY :&quot;,&quot;TE BETALEN :&quot;,&quot;A PAYER :&quot;)]  " HorzAlign="Right" Font="Arial, 8pt, style=Bold" ColSpan="2"/>
+                <TableCell Name="Cell47" Border.Lines="Left" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell48" Border.Lines="All" Text=" [RemindersDetails.APayer] [RemindersDetails.dev_nom]" HorzAlign="Center" Font="Arial, 9pt, style=Bold" ColSpan="3"/>
+                <TableCell Name="Cell49" Border.Lines="All" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell50" Border.Lines="All" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell51" Border.Lines="Top" HorzAlign="Center" Font="Arial, 8pt"/>
+                <TableCell Name="Cell52" HorzAlign="Center" Font="Arial, 8pt"/>
+              </TableRow>
+            </TableObject>
+          </GroupFooterBand>
+        </GroupHeaderBand>
+      </DataBand>
+      <GroupFooterBand Name="GroupFooter1" Top="609.9" Width="718.2" Height="226.8">
+        <TextObject Name="Text7" Left="491.4" Top="122.85" Width="217.35" Height="66.15" Text="[RemindersHeaders.signature]" HorzAlign="Right" WordWrap="true"/>
+        <TextObject Name="Text28" Left="9.45" Top="9.45" Width="699.3" Height="103.95" Text="[RemindersHeaders.bas]" WordWrap="true"/>
+      </GroupFooterBand>
+    </GroupHeaderBand>
+    <PageFooterBand Name="PageFooter1" Top="840.7" Width="718.2"/>
+  </ReportPage>
+</Report>

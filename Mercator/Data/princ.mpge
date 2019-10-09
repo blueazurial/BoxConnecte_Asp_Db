@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CONTAINER">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="name" type="xs:string" minOccurs="0" />
+                <xs:element name="width" type="xs:int" minOccurs="0" />
+                <xs:element name="height" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CTL">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MODULE" type="xs:string" minOccurs="0" />
+                <xs:element name="NAME" type="xs:string" minOccurs="0" />
+                <xs:element name="PAGE" type="xs:short" minOccurs="0" />
+                <xs:element name="LEFT" type="xs:int" minOccurs="0" />
+                <xs:element name="TOP" type="xs:int" minOccurs="0" />
+                <xs:element name="WIDTH" type="xs:int" minOccurs="0" />
+                <xs:element name="HEIGHT" type="xs:int" minOccurs="0" />
+                <xs:element name="INPUTMASK" type="xs:string" minOccurs="0" />
+                <xs:element name="TABINDEX" type="xs:int" minOccurs="0" />
+                <xs:element name="AJOUT" type="xs:boolean" minOccurs="0" />
+                <xs:element name="PAGESTR" type="xs:string" minOccurs="0" />
+                <xs:element name="SOURCE" type="xs:string" minOccurs="0" />
+                <xs:element name="CLASSE" type="xs:string" minOccurs="0" />
+                <xs:element name="NIVEAU" type="xs:short" minOccurs="0" />
+                <xs:element name="EXPR" type="xs:string" minOccurs="0" />
+                <xs:element name="NIVEAU2" type="xs:short" minOccurs="0" />
+                <xs:element name="ID" type="xs:string" minOccurs="0" />
+                <xs:element name="LIBELLEF" type="xs:string" minOccurs="0" />
+                <xs:element name="LIBELLEN" type="xs:string" minOccurs="0" />
+                <xs:element name="LIBELLEE" type="xs:string" minOccurs="0" />
+                <xs:element name="GRIDSCRIPT" type="xs:string" minOccurs="0" />
+                <xs:element name="DEPT" type="xs:string" minOccurs="0" />
+                <xs:element name="DEPT2" type="xs:string" minOccurs="0" />
+                <xs:element name="CSS" type="xs:string" minOccurs="0" />
+                <xs:element name="TAG1" type="xs:string" minOccurs="0" />
+                <xs:element name="TAG2" type="xs:string" minOccurs="0" />
+                <xs:element name="AFTERDONE" type="xs:boolean" minOccurs="0" />
+                <xs:element name="LIBELLED" type="xs:string" minOccurs="0" />
+                <xs:element name="GRIDTABLE" type="xs:string" minOccurs="0" />
+                <xs:element name="SFONT" type="xs:string" minOccurs="0" />
+                <xs:element name="SBACKCOLOR" type="xs:string" minOccurs="0" />
+                <xs:element name="SFORECOLOR" type="xs:string" minOccurs="0" />
+                <xs:element name="RECNO" type="xs:decimal" minOccurs="0" />
+                <xs:element name="XTYPE" type="xs:short" minOccurs="0" />
+                <xs:element name="SSQL" type="xs:string" minOccurs="0" />
+                <xs:element name="LINESIZE" type="xs:short" minOccurs="0" />
+                <xs:element name="ORIENT" type="xs:string" minOccurs="0" />
+                <xs:element name="SANCHOR" type="xs:string" minOccurs="0" />
+                <xs:element name="MULTILINE" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SCRIPTEXEC" type="xs:boolean" minOccurs="0" />
+                <xs:element name="COLS" type="xs:string" minOccurs="0" />
+                <xs:element name="ENTERSTOP" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CONTAINER>
+    <name>page_A6DBEA3DB6</name>
+    <width>784</width>
+    <height>428</height>
+  </CONTAINER>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>4EBA8E0D43</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>20</LEFT>
+    <TOP>155</TOP>
+    <WIDTH>745</WIDTH>
+    <HEIGHT>254</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>2</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>page_A6DBEA3DB6</PAGESTR>
+    <SOURCE />
+    <CLASSE>Rectangle</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>4EBA8E0D43</ID>
+    <LIBELLEF />
+    <LIBELLEN />
+    <LIBELLEE />
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1 />
+    <TAG2 />
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED />
+    <GRIDTABLE />
+    <SFONT />
+    <SBACKCOLOR>White</SBACKCOLOR>
+    <SFORECOLOR>Transparent</SFORECOLOR>
+    <RECNO>1</RECNO>
+    <XTYPE>0</XTYPE>
+    <SSQL />
+    <LINESIZE>1</LINESIZE>
+    <ORIENT />
+    <SANCHOR>Top, Bottom, Left, Right</SANCHOR>
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>991C5E5E92</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>96</LEFT>
+    <TOP>114</TOP>
+    <WIDTH>649</WIDTH>
+    <HEIGHT>140</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>3</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>4EBA8E0D43</PAGESTR>
+    <SOURCE>RESULTAT</SOURCE>
+    <CLASSE>TextBox</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>991C5E5E92</ID>
+    <LIBELLEF />
+    <LIBELLEN />
+    <LIBELLEE />
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1>{{</TAG1>
+    <TAG2>}}</TAG2>
+    <AFTERDONE>true</AFTERDONE>
+    <LIBELLED />
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR>Window</SBACKCOLOR>
+    <SFORECOLOR>WindowText</SFORECOLOR>
+    <RECNO>2</RECNO>
+    <XTYPE>35</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT />
+    <SANCHOR>Bottom, Right</SANCHOR>
+    <MULTILINE>true</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>3E24453AEC</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>10</LEFT>
+    <TOP>114</TOP>
+    <WIDTH>80</WIDTH>
+    <HEIGHT>20</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>2</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>4EBA8E0D43</PAGESTR>
+    <SOURCE />
+    <CLASSE>Label</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>3E24453AEC</ID>
+    <LIBELLEF>Compte-rendu :</LIBELLEF>
+    <LIBELLEN>Debriefing :</LIBELLEN>
+    <LIBELLEE>Debriefing :</LIBELLEE>
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1 />
+    <TAG2 />
+    <AFTERDONE>true</AFTERDONE>
+    <LIBELLED>Compte-rendu :</LIBELLED>
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR />
+    <SFORECOLOR>ControlDarkDark</SFORECOLOR>
+    <RECNO>3</RECNO>
+    <XTYPE>0</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT>Far</ORIENT>
+    <SANCHOR>Bottom, Right</SANCHOR>
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>448A2A6FC4</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>0</LEFT>
+    <TOP>0</TOP>
+    <WIDTH>745</WIDTH>
+    <HEIGHT>104</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>1</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>4EBA8E0D43</PAGESTR>
+    <SOURCE>NOTE</SOURCE>
+    <CLASSE>TextBox</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>448A2A6FC4</ID>
+    <LIBELLEF />
+    <LIBELLEN />
+    <LIBELLEE />
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1>{{</TAG1>
+    <TAG2>}}</TAG2>
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED />
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR>Window</SBACKCOLOR>
+    <SFORECOLOR>WindowText</SFORECOLOR>
+    <RECNO>4</RECNO>
+    <XTYPE>35</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT />
+    <SANCHOR>Top, Bottom, Left, Right</SANCHOR>
+    <MULTILINE>true</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>E5A8F309BB</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>20</LEFT>
+    <TOP>20</TOP>
+    <WIDTH>745</WIDTH>
+    <HEIGHT>115</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>1</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>page_A6DBEA3DB6</PAGESTR>
+    <SOURCE />
+    <CLASSE>Rectangle</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>E5A8F309BB</ID>
+    <LIBELLEF />
+    <LIBELLEN />
+    <LIBELLEE />
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1 />
+    <TAG2 />
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED />
+    <GRIDTABLE />
+    <SFONT />
+    <SBACKCOLOR>White</SBACKCOLOR>
+    <SFORECOLOR>Black</SFORECOLOR>
+    <RECNO>5</RECNO>
+    <XTYPE>0</XTYPE>
+    <SSQL />
+    <LINESIZE>1</LINESIZE>
+    <ORIENT />
+    <SANCHOR>Top, Left, Right</SANCHOR>
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>BB70114ECD</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>10</LEFT>
+    <TOP>10</TOP>
+    <WIDTH>100</WIDTH>
+    <HEIGHT>20</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>12</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>E5A8F309BB</PAGESTR>
+    <SOURCE>ID_SIG</SOURCE>
+    <CLASSE>TextBox</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>BB70114ECD</ID>
+    <LIBELLEF />
+    <LIBELLEN />
+    <LIBELLEE />
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1>{{</TAG1>
+    <TAG2>}}</TAG2>
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED />
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR>Window</SBACKCOLOR>
+    <SFORECOLOR>ControlDarkDark</SFORECOLOR>
+    <RECNO>6</RECNO>
+    <XTYPE>175</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT />
+    <SANCHOR>Top, Left</SANCHOR>
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>B296FAEB51</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>689</LEFT>
+    <TOP>12</TOP>
+    <WIDTH>0</WIDTH>
+    <HEIGHT>0</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>11</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>E5A8F309BB</PAGESTR>
+    <SOURCE>Done</SOURCE>
+    <CLASSE>CheckBox</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>B296FAEB51</ID>
+    <LIBELLEF>Fait</LIBELLEF>
+    <LIBELLEN>Gedaan</LIBELLEN>
+    <LIBELLEE>Done</LIBELLEE>
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1 />
+    <TAG2 />
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED>Neu</LIBELLED>
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt, style=Bold</SFONT>
+    <SBACKCOLOR />
+    <SFORECOLOR>ARGB:0</SFORECOLOR>
+    <RECNO>7</RECNO>
+    <XTYPE>0</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT />
+    <SANCHOR />
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>C36263B9C2</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>326</LEFT>
+    <TOP>87</TOP>
+    <WIDTH>0</WIDTH>
+    <HEIGHT>0</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>8</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>E5A8F309BB</PAGESTR>
+    <SOURCE>PIM_PRIVAT</SOURCE>
+    <CLASSE>CheckBox</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>C36263B9C2</ID>
+    <LIBELLEF>Privé</LIBELLEF>
+    <LIBELLEN>Privaat</LIBELLEN>
+    <LIBELLEE>Private</LIBELLEE>
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1 />
+    <TAG2 />
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED>Privé</LIBELLED>
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR />
+    <SFORECOLOR>ControlDarkDark</SFORECOLOR>
+    <RECNO>8</RECNO>
+    <XTYPE>104</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT />
+    <SANCHOR />
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>5FDF93E5E3</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>325</LEFT>
+    <TOP>62</TOP>
+    <WIDTH>0</WIDTH>
+    <HEIGHT>0</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>7</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>E5A8F309BB</PAGESTR>
+    <SOURCE>PIM_ALLDAY</SOURCE>
+    <CLASSE>CheckBox</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>5FDF93E5E3</ID>
+    <LIBELLEF>Journée Complète</LIBELLEF>
+    <LIBELLEN>Ganse dag</LIBELLEN>
+    <LIBELLEE>Whole day</LIBELLEE>
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1 />
+    <TAG2 />
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED>Journée Complète</LIBELLED>
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR />
+    <SFORECOLOR>ControlDarkDark</SFORECOLOR>
+    <RECNO>9</RECNO>
+    <XTYPE>104</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT />
+    <SANCHOR />
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>E7A3C614A3</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>675</LEFT>
+    <TOP>85</TOP>
+    <WIDTH>60</WIDTH>
+    <HEIGHT>20</HEIGHT>
+    <INPUTMASK># ##0</INPUTMASK>
+    <TABINDEX>10</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>E5A8F309BB</PAGESTR>
+    <SOURCE>PIM_REMIND</SOURCE>
+    <CLASSE>TextBox</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>E7A3C614A3</ID>
+    <LIBELLEF />
+    <LIBELLEN />
+    <LIBELLEE />
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1>{{</TAG1>
+    <TAG2>}}</TAG2>
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED />
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR>Window</SBACKCOLOR>
+    <SFORECOLOR>WindowText</SFORECOLOR>
+    <RECNO>10</RECNO>
+    <XTYPE>108</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT />
+    <SANCHOR>Top, Left</SANCHOR>
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>DC09400286</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>590</LEFT>
+    <TOP>85</TOP>
+    <WIDTH>80</WIDTH>
+    <HEIGHT>20</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>9</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>E5A8F309BB</PAGESTR>
+    <SOURCE />
+    <CLASSE>Label</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>DC09400286</ID>
+    <LIBELLEF>Rappel :</LIBELLEF>
+    <LIBELLEN>Warning :</LIBELLEN>
+    <LIBELLEE>Warning :</LIBELLEE>
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1 />
+    <TAG2 />
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED>Rappel :</LIBELLED>
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR />
+    <SFORECOLOR>ControlDarkDark</SFORECOLOR>
+    <RECNO>11</RECNO>
+    <XTYPE>0</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT>Far</ORIENT>
+    <SANCHOR>Top, Left</SANCHOR>
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>8AEC105A1E</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>95</LEFT>
+    <TOP>85</TOP>
+    <WIDTH>120</WIDTH>
+    <HEIGHT>20</HEIGHT>
+    <INPUTMASK>DateTime</INPUTMASK>
+    <TABINDEX>6</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>E5A8F309BB</PAGESTR>
+    <SOURCE>MOMENT_2</SOURCE>
+    <CLASSE>TextBox</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>8AEC105A1E</ID>
+    <LIBELLEF />
+    <LIBELLEN />
+    <LIBELLEE />
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1>{{</TAG1>
+    <TAG2>}}</TAG2>
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED />
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR>Window</SBACKCOLOR>
+    <SFORECOLOR>WindowText</SFORECOLOR>
+    <RECNO>12</RECNO>
+    <XTYPE>61</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT />
+    <SANCHOR>Top, Left</SANCHOR>
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>24B42939A8</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>95</LEFT>
+    <TOP>60</TOP>
+    <WIDTH>120</WIDTH>
+    <HEIGHT>20</HEIGHT>
+    <INPUTMASK>DateTime</INPUTMASK>
+    <TABINDEX>4</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>E5A8F309BB</PAGESTR>
+    <SOURCE>MOMENT_1</SOURCE>
+    <CLASSE>TextBox</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>24B42939A8</ID>
+    <LIBELLEF />
+    <LIBELLEN />
+    <LIBELLEE />
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1>{{</TAG1>
+    <TAG2>}}</TAG2>
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED />
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR>Window</SBACKCOLOR>
+    <SFORECOLOR>WindowText</SFORECOLOR>
+    <RECNO>13</RECNO>
+    <XTYPE>61</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT />
+    <SANCHOR>Top, Left</SANCHOR>
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>437A9C16BA</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>95</LEFT>
+    <TOP>35</TOP>
+    <WIDTH>640</WIDTH>
+    <HEIGHT>20</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>2</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>E5A8F309BB</PAGESTR>
+    <SOURCE>OBJET</SOURCE>
+    <CLASSE>TextBox</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>437A9C16BA</ID>
+    <LIBELLEF />
+    <LIBELLEN />
+    <LIBELLEE />
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1>{{</TAG1>
+    <TAG2>}}</TAG2>
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED />
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR>Window</SBACKCOLOR>
+    <SFORECOLOR>WindowText</SFORECOLOR>
+    <RECNO>14</RECNO>
+    <XTYPE>175</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT />
+    <SANCHOR>Top, Left</SANCHOR>
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>FC6036164D</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>10</LEFT>
+    <TOP>85</TOP>
+    <WIDTH>80</WIDTH>
+    <HEIGHT>20</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>5</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>E5A8F309BB</PAGESTR>
+    <SOURCE />
+    <CLASSE>Label</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>FC6036164D</ID>
+    <LIBELLEF>Fin :</LIBELLEF>
+    <LIBELLEN>Einde :</LIBELLEN>
+    <LIBELLEE>End :</LIBELLEE>
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1 />
+    <TAG2 />
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED>Fin :</LIBELLED>
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR />
+    <SFORECOLOR>ControlDarkDark</SFORECOLOR>
+    <RECNO>15</RECNO>
+    <XTYPE>0</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT>Far</ORIENT>
+    <SANCHOR>Top, Left</SANCHOR>
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>1EEAA3143E</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>10</LEFT>
+    <TOP>60</TOP>
+    <WIDTH>80</WIDTH>
+    <HEIGHT>20</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>3</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>E5A8F309BB</PAGESTR>
+    <SOURCE />
+    <CLASSE>Label</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>1EEAA3143E</ID>
+    <LIBELLEF>Début :</LIBELLEF>
+    <LIBELLEN>Begin :</LIBELLEN>
+    <LIBELLEE>Begin :</LIBELLEE>
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1 />
+    <TAG2 />
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED>Début :</LIBELLED>
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR />
+    <SFORECOLOR>ControlDarkDark</SFORECOLOR>
+    <RECNO>16</RECNO>
+    <XTYPE>0</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT>Far</ORIENT>
+    <SANCHOR>Top, Left</SANCHOR>
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+  <CTL>
+    <MODULE>.A-492BF38</MODULE>
+    <NAME>681D8C5208</NAME>
+    <PAGE>0</PAGE>
+    <LEFT>10</LEFT>
+    <TOP>35</TOP>
+    <WIDTH>80</WIDTH>
+    <HEIGHT>20</HEIGHT>
+    <INPUTMASK />
+    <TABINDEX>1</TABINDEX>
+    <AJOUT>false</AJOUT>
+    <PAGESTR>E5A8F309BB</PAGESTR>
+    <SOURCE />
+    <CLASSE>Label</CLASSE>
+    <NIVEAU>0</NIVEAU>
+    <EXPR />
+    <NIVEAU2>0</NIVEAU2>
+    <ID>681D8C5208</ID>
+    <LIBELLEF>Sujet :</LIBELLEF>
+    <LIBELLEN>Onderwerp :</LIBELLEN>
+    <LIBELLEE>Subject :</LIBELLEE>
+    <GRIDSCRIPT />
+    <DEPT />
+    <DEPT2 />
+    <CSS />
+    <TAG1 />
+    <TAG2 />
+    <AFTERDONE>false</AFTERDONE>
+    <LIBELLED>Sujet :</LIBELLED>
+    <GRIDTABLE />
+    <SFONT>Microsoft Sans Serif, 8.25pt</SFONT>
+    <SBACKCOLOR />
+    <SFORECOLOR>ControlDarkDark</SFORECOLOR>
+    <RECNO>17</RECNO>
+    <XTYPE>0</XTYPE>
+    <SSQL />
+    <LINESIZE>0</LINESIZE>
+    <ORIENT>Far</ORIENT>
+    <SANCHOR>Top, Left</SANCHOR>
+    <MULTILINE>false</MULTILINE>
+    <SCRIPTEXEC>false</SCRIPTEXEC>
+    <COLS />
+    <ENTERSTOP>false</ENTERSTOP>
+  </CTL>
+</NewDataSet>

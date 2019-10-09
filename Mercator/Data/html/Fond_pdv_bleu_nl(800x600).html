@@ -1,0 +1,163 @@
+<html>
+<head>
+<TITLE>fond_pdv</TITLE>
+<script type=text/javascript>
+
+	function validform() { 
+		var user = document.getElementById('FORM_user').user.value;
+		if (user.toString().length == 0) {
+			alert('Châine vide !');
+			return(false); }
+		else {
+         		return(true);} 
+		}
+
+	function saveform() {
+		var user = document.getElementById('FORM_user').user.value;
+		window.location='Mercator:do ch_user with .F.,.F.,"'+user+'";';
+	}
+
+</script>
+
+<style type="text/css">
+body,table, td {font-size: 8}
+</style>
+
+</head>
+
+<BODY text="#800000" link="#000080" vlink="#000080" alink="#000080" scroll="no" background="fond_pdv/image_mer.jpg">
+
+
+<CENTER>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+<TR><TD width=33% height=25% align="center" valign="middle">
+
+
+<img src="fond_pdv/logo_mercator.gif" width="180" height="170"></td>
+
+
+<!-- CADRE HAUT DROIT-->
+<TD width=66% align="CENTER" colspan=2>
+
+<table width="95%" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="3"><table width="100%" border="0" cellpadding="0" cellspacing="0"> <tr> <td width="17" height="13"><img src="fond_pdv/coin_haut_gauche.gif" width="17" height="13"></td><td background="fond_pdv/bord_haut.gif"><FONT size="1">&nbsp;</FONT></td><td width="22"><img src="fond_pdv/coin_haut_droit.gif" width="22" height="13"></td></tr></table></td> </tr> <tr> <td background="fond_pdv/bord_gauche.gif" width="17" ><FONT size="1">&nbsp;</FONT></td><td align="center"> 
+
+<font face="Arial" size=4>
+<B><U>Signaletiek</U></B></font><BR>
+<BR>
+<a href="Mercator:ox_sig_cli.montrer();"><img border="0" name="cli" src="fond_pdv/bleuf_klant.bmp" onMouseOver="document['cli'].src='fond_pdv/bleuc_klant.bmp'" onMouseOut="document['cli'].src='fond_pdv/bleuf_klant.bmp'" onClick="document['cli'].src='fond_pdv/bleup_klant.bmp'"></a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="Mercator:ox_sig_stock.montrer();"><img border="0" name="art" src="fond_pdv/bleuf_artn.bmp" onMouseOver="document['art'].src='fond_pdv/bleuc_artn.bmp'" onMouseOut="document['art'].src='fond_pdv/bleuf_artn.bmp'" onClick="document['art'].src='fond_pdv/bleup_artn.bmp'"></a><br>
+
+</td><td background="fond_pdv/bord_droit.gif" width="22"></td></tr><tr><td colspan="3"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr> <td width="17"><img src="fond_pdv/coin_bas_gauche.gif" width="17" height="13"></td><td background="fond_pdv/bord_bas.gif"><FONT size="1">&nbsp;</FONT></td><td width="22"><img src="fond_pdv/coin_bas_droit.gif" width="22" height="13"></td></tr></table></td></tr></table>
+</TD>
+
+
+
+</TR>
+
+
+<TR>
+<!-- CADRE GAUCHE-->
+<TD width=33% align="CENTER" valign="TOP">
+<BR>
+
+<table width="90%" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="3"><table width="100%" border="0" cellpadding="0" cellspacing="0"> <tr> <td width="17" height="13"><img src="fond_pdv/coin_haut_gauche.gif" width="17" height="13"></td><td background="fond_pdv/bord_haut.gif"><FONT size="1">&nbsp;</FONT></td><td width="22"><img src="fond_pdv/coin_haut_droit.gif" width="22" height="13"></td></tr></table></td> </tr> <tr> <td background="fond_pdv/bord_gauche.gif" width="17" ><FONT size="1">&nbsp;</FONT></td><td align="center"> 
+
+<font face="Arial" size=4>
+<B><U>Invoer</U></B></font><BR><BR>
+
+<a href="Mercator:do doc_start with 'V','Comm';"><img border="0" name="comm" src="fond_pdv/bleuf_bestelling.bmp" onMouseOver="document['comm'].src='fond_pdv/bleuc_bestelling.bmp'" onMouseOut="document['comm'].src='fond_pdv/bleuf_bestelling.bmp'" onClick="document['comm'].src='fond_pdv/bleup_bestelling.bmp'"></a><br>
+<BR>
+
+<a href="Mercator:do doc_start with 'V','Compt';"><img border="0" name="vente" src="fond_pdv/bleuf_ticket.bmp" onMouseOver="document['vente'].src='fond_pdv/bleuc_ticket.bmp'" onMouseOut="document['vente'].src='fond_pdv/bleuf_ticket.bmp'" onClick="document['vente'].src='fond_pdv/bleup_ticket.bmp'"></a><br>
+<BR>
+<a href="Mercator:do doc_start with 'V','Factu';"><img border="0" name="facture" src="fond_pdv/bleuf_factuur.bmp" onMouseOver="document['facture'].src='fond_pdv/bleuc_factuur.bmp'" onMouseOut="document['facture'].src='fond_pdv/bleuf_factuur.bmp'" onClick="document['facture'].src='fond_pdv/bleup_factuur.bmp'"></a><br>
+
+
+</td><td background="fond_pdv/bord_droit.gif" width="22"></td></tr><tr><td colspan="3"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr> <td width="17"><img src="fond_pdv/coin_bas_gauche.gif" width="17" height="13"></td><td background="fond_pdv/bord_bas.gif"><FONT size="1">&nbsp;</FONT></td><td width="22"><img src="fond_pdv/coin_bas_droit.gif" width="22" height="13"></td></tr></table></td></tr></table>
+
+
+
+<FORM ID="FORM_user" onSubmit="return(validform());"  ACTION = "javascript:saveform();">
+<font face="Arial" size=2> <b><XBASE>users.nom</XBASE></b></font>&nbsp;&nbsp;
+<INPUT NAME="user" TYPE="password" SIZE=10>
+<input type="submit" value="Login">
+
+</FORM>
+
+
+</TD>
+
+
+
+<!-- CADRE CENTRE-->
+<TD width=33% align="CENTER" valign="TOP">
+<BR>
+
+<table width="90%" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="3"><table width="100%" border="0" cellpadding="0" cellspacing="0"> <tr> <td width="17" height="13"><img src="fond_pdv/coin_haut_gauche.gif" width="17" height="13"></td><td background="fond_pdv/bord_haut.gif"><FONT size="1">&nbsp;</FONT></td><td width="22"><img src="fond_pdv/coin_haut_droit.gif" width="22" height="13"></td></tr></table></td> </tr> <tr> <td background="fond_pdv/bord_gauche.gif" width="17" ><FONT size="1">&nbsp;</FONT></td><td align="center"> 
+
+<font face="Arial" size=4>
+<B><U>Historiek</U></B></font><BR><BR>
+
+
+<a href="Mercator:do doc_hist with 'Comm' in 'fond_pdv';"><img border="0" name="commh" src="fond_pdv/bleuf_bestellingen.bmp" onMouseOver="document['commh'].src='fond_pdv/bleuc_bestellingen.bmp'" onMouseOut="document['commh'].src='fond_pdv/bleuf_bestellingen.bmp'" onClick="document['commh'].src='fond_pdv/bleup_bestellingen.bmp'"></a><br>
+<BR>
+
+<a href="Mercator:do doc_hist with 'Compt' in 'fond_pdv';"><img border="0" name="venteh" src="fond_pdv/bleuf_ticketen.bmp" onMouseOver="document['venteh'].src='fond_pdv/bleuc_ticketen.bmp'" onMouseOut="document['venteh'].src='fond_pdv/bleuf_ticketen.bmp'"
+onClick="document['venteh'].src='fond_pdv/bleup_ticketen.bmp'"></a><br>
+<BR>
+<a href="Mercator:do doc_hist with 'Factu' in 'fond_pdv';"><img border="0" name="factureh" src="fond_pdv/bleuf_facturen.bmp" onMouseOver="document['factureh'].src='fond_pdv/bleuc_facturen.bmp'" onMouseOut="document['factureh'].src='fond_pdv/bleuf_facturen.bmp'" onClick="document['factureh'].src='fond_pdv/bleup_facturen.bmp'"></a><br>
+<BR>
+
+<a href="Mercator:do last_doc in 'fond_pdv';"><img border="0" name="last_doc" src="fond_pdv/bleuf_lastdocn.bmp" onMouseOver="document['last_doc'].src='fond_pdv/bleuc_lastdocn.bmp'" onMouseOut="document['last_doc'].src='fond_pdv/bleuf_lastdocn.bmp'" onClick="document['last_doc'].src='fond_pdv/bleup_lastdocn.bmp'"></a><br>
+
+
+</td><td background="fond_pdv/bord_droit.gif" width="22"></td></tr><tr><td colspan="3"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr> <td width="17"><img src="fond_pdv/coin_bas_gauche.gif" width="17" height="13"></td><td background="fond_pdv/bord_bas.gif"><FONT size="1">&nbsp;</FONT></td><td width="22"><img src="fond_pdv/coin_bas_droit.gif" width="22" height="13"></td></tr></table></td></tr></table>
+</TD>
+
+
+
+
+<!-- CADRE DROITE-->
+<TD width=33% align="CENTER" valign="TOP">
+<BR>
+
+<table width="90%" border="0" cellpadding="0" cellspacing="0"><tr><td colspan="3"><table width="100%" border="0" cellpadding="0" cellspacing="0"> <tr> <td width="17" height="13"><img src="fond_pdv/coin_haut_gauche.gif" width="17" height="13"></td><td background="fond_pdv/bord_haut.gif"><FONT size="1">&nbsp;</FONT></td><td width="22"><img src="fond_pdv/coin_haut_droit.gif" width="22" height="13"></td></tr></table></td> </tr> <tr> <td background="fond_pdv/bord_gauche.gif" width="17" ><FONT size="1">&nbsp;</FONT></td><td align="center"> 
+
+<font face="Arial" size=4>
+<B><U>Kassa Beheer</U></B></FONT><BR><BR>
+
+<a href="Mercator:do yCashState;"><img border="0" name="caisse" src="fond_pdv/bleuf_kassa.bmp" onMouseOver="document['caisse'].src='fond_pdv/bleuc_kassa.bmp'" onMouseOut="document['caisse'].src='fond_pdv/bleuf_kassa.bmp'" onClick="document['caisse'].src='fond_pdv/bleup_kassa.bmp'"></a><br>
+<BR>
+
+<a href="Mercator:do yCashDeposit;"><img border="0" name="depot" src="fond_pdv/bleuf_deposito.bmp" onMouseOver="document['depot'].src='fond_pdv/bleuc_deposito.bmp'" onMouseOut="document['depot'].src='fond_pdv/bleuf_deposito.bmp'" onClick="document['depot'].src='fond_pdv/bleup_deposito.bmp'"></a><br>
+<BR>
+
+<a href="Mercator:do yBankRemitting;"><img border="0" name="remise" src="fond_pdv/bleuf_storting.bmp" onMouseOver="document['remise'].src='fond_pdv/bleuc_storting.bmp'" onMouseOut="document['remise'].src='fond_pdv/bleuf_storting.bmp'"
+onClick="document['remise'].src='fond_pdv/bleup_storting.bmp'"></a><br>
+<BR>
+<a href="Mercator:do yEncashmentsFull;"><img border="0" name="histo" src="fond_pdv/bleuf_historiek.bmp" onMouseOver="document['histo'].src='fond_pdv/bleuc_historiek.bmp'" onMouseOut="document['histo'].src='fond_pdv/bleuf_historiek.bmp'" onClick="document['histo'].src='fond_pdv/bleup_historiek.bmp'" ></a><br>
+
+
+</td><td background="fond_pdv/bord_droit.gif" width="22"></td></tr><tr><td colspan="3"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr> <td width="17"><img src="fond_pdv/coin_bas_gauche.gif" width="17" height="13"></td><td background="fond_pdv/bord_bas.gif"><FONT size="1">&nbsp;</FONT></td><td width="22"><img src="fond_pdv/coin_bas_droit.gif" width="22" height="13"></td></tr></table></td></tr></table>
+
+
+</TD>
+</TR>
+</TABLE>
+
+
+
+
+</BODY>
+</HTML>
+
+
+
+
+
+
+

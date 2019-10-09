@@ -1,0 +1,1 @@
+mercatorole.exe /REGSERVER
