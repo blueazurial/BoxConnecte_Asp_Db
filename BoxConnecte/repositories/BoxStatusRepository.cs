@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.repositories
 {
-    class BoxStatusRepository : BaseRepository<BoxStatus>
+    public class BoxStatusRepository : BaseRepository<BoxStatus>
     {
         public override bool Delete(int id)
         {

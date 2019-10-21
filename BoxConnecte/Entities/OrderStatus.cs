@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.Entities
 {
-    class OrderStatus
+    public class OrderStatus
     {
         public int Id { get; set; }
         //??? il manque quelque chose ???

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.repositories
 {
-    class AddressRepository : BaseRepository<Address>
+    public class AddressRepository : BaseRepository<Address>
     {
         public override bool Delete(int id)
         {
@@ -32,7 +32,7 @@ namespace BoxConnecte.repositories
 
         public override int Insert(Address address)
         {
-            string query = " INSERT INTO Address(Number,Street,PostalCode,City)OUTPUT inserted.id VALUES (@Number,@Street,@PostalCode,@City)";
+            string query = " INSERT INTO Address(Number,Street,PostalCode,City)OUTPUT inserted.id VALUES (@number,@street,@postalcode,@city)";
             Command cmd = new Command(query);
             //setParameters est une methode pour des valeurs economie de ligne de code  
             cmd.SetParameters(address);

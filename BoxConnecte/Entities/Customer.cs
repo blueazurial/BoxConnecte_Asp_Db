@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.Entities
 {
-    class Customer
+    public class Customer
     {
         public int Id { get; set; }
         public int CustomerCode { get; set; }

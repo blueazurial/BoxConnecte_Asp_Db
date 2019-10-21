@@ -7,7 +7,7 @@ using BoxConnecte.Entities;
 
 namespace BoxConnecte.repositories
 {
-    class OrderStatusRepository : BaseRepository<OrderStatus>
+    public class OrderStatusRepository : BaseRepository<OrderStatus>
     {
         public override bool Delete(int id)
         {

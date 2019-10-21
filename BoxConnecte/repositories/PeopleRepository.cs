@@ -1,4 +1,5 @@
 ﻿using BoxConnecte.Entities;
+using BoxConnecte.Mappers;
 using DB;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.repositories
 {
-    class PeopleRepository : BaseRepository<People>
+    public class PeopleRepository : BaseRepository<People>
     {
         public override bool Delete(int id)
         {
@@ -20,12 +21,18 @@ namespace BoxConnecte.repositories
 
         public override People Get(int id)
         {
-            throw new NotImplementedException();
+            string query = "SELECT * FROM People WHERE Id = @id";
+            Command cmd = new Command(query);
+            cmd.AddParameter("@id", id);
+            return _Connection.ExecuteReader(cmd, UniversalDbToEntityMapper.Mapper<People>).FirstOrDefault();
         }
 
         public override IEnumerable<People> GetAll()
         {
-            throw new NotImplementedException();
+            string query = "SELECT * FROM People ";
+            Command cmd = new Command(query);
+            //executeR me renvoie un idatareader et mon mapper fais les liens vers mon object 
+            return _Connection.ExecuteReader(cmd, UniversalDbToEntityMapper.Mapper<People>);
         }
 
         public override int Insert(People people)
