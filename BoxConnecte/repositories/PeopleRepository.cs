@@ -1,5 +1,5 @@
-﻿
-using BoxConnecte.Entities;
+﻿using BoxConnecte.Entities;
+using BoxConnecte.Mappers;
 using DB;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.repositories
 {
-    class PeopleRepository : BaseRepository<People>
+    public class PeopleRepository : BaseRepository<People>
     {
         public override bool Delete(int id)
         {
@@ -21,17 +21,23 @@ namespace BoxConnecte.repositories
 
         public override People Get(int id)
         {
-            throw new NotImplementedException();
+            string query = "SELECT * FROM People WHERE Id = @id";
+            Command cmd = new Command(query);
+            cmd.AddParameter("@id", id);
+            return _Connection.ExecuteReader(cmd, UniversalDbToEntityMapper.Mapper<People>).FirstOrDefault();
         }
 
         public override IEnumerable<People> GetAll()
         {
-            throw new NotImplementedException();
+            string query = "SELECT * FROM People ";
+            Command cmd = new Command(query);
+            //executeR me renvoie un idatareader et mon mapper fais les liens vers mon object 
+            return _Connection.ExecuteReader(cmd, UniversalDbToEntityMapper.Mapper<People>);
         }
 
         public override int Insert(People people)
         {
-            string query = " INSERT INTO People(FirstName,LastName,Email,Birthdate,Gsm,Password)OUTPUT inserted.id VALUES (@FirstName,@LastName,@Email,@Birthdate,@Gsm,@password)";
+            string query = " INSERT INTO People(FirstName,LastName,Email,Birthdate,Gsm,AddressId)OUTPUT inserted.id VALUES (@firstName,@lastName,@email,@birthdate,@gsm,@addressId)";
             Command cmd = new Command(query);
             //setParameters est une methode pour des valeurs economie de ligne de code  
             cmd.SetParameters(people);
@@ -41,14 +47,13 @@ namespace BoxConnecte.repositories
 
         public override bool Update(People people)
         {
-            string query = "UPDATE people SET C_Nom = @c_nom,LastName = @LastName,Email = @Email,Birthdate = @Birthdate,Gsm = @Gsm ,Password = @password";
+            string query = "UPDATE people SET FirstName = @FirstName,LastName = @LastName,Email = @Email,Birthdate = @Birthdate,Gsm = @Gsm ";
             Command cmd = new Command(query);
-            cmd.Parameters.Add("@c_nom", people.C_Nom);
-            cmd.Parameters.Add("@LastName", people.LastName);
-            cmd.Parameters.Add("@Email", people.Email);
-            cmd.Parameters.Add("@Birthdate", people.Birthdate);
-            cmd.Parameters.Add("@Gsm", people.Gsm);
-            cmd.Parameters.Add("@Password", people.Password);
+            cmd.Parameters.Add("@firstName", people.FirstName);
+            cmd.Parameters.Add("@lastName", people.LastName);
+            cmd.Parameters.Add("@email", people.Email);
+            cmd.Parameters.Add("@birthdate", people.Birthdate);
+            cmd.Parameters.Add("@gsm", people.Gsm);
             return (_Connection.ExecuteNonQuery(cmd) == 1);
         }
     }

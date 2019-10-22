@@ -22,12 +22,18 @@ namespace BoxConnecte.repositories
 
         public override Address Get(int id)
         {
-            throw new NotImplementedException();
+            string query = "SELECT * FROM Address WHERE Id = @id";
+            Command cmd = new Command(query);
+            cmd.AddParameter("@id", id);
+            return _Connection.ExecuteReader(cmd, UniversalDbToEntityMapper.Mapper<Address>).FirstOrDefault();
         }
 
         public override IEnumerable<Address> GetAll()
         {
-            throw new NotImplementedException();
+            string query = "SELECT * FROM Address ";
+            Command cmd = new Command(query);
+            //executeR me renvoie un idatareader et mon mapper fais les liens vers mon object 
+            return _Connection.ExecuteReader(cmd, UniversalDbToEntityMapper.Mapper<Address>);
         }
 
         public override int Insert(Address address)
