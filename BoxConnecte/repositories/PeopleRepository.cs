@@ -37,7 +37,7 @@ namespace BoxConnecte.repositories
 
         public override int Insert(People people)
         {
-            string query = " INSERT INTO People(FirstName,LastName,Email,Birthdate,Gsm)OUTPUT inserted.id VALUES (@FirstName,@LastName,@Email,@Birthdate,@Gsm)";
+            string query = " INSERT INTO People(FirstName,LastName,Email,Birthdate,Gsm,AddressId)OUTPUT inserted.id VALUES (@firstName,@lastName,@email,@birthdate,@gsm,@addressId)";
             Command cmd = new Command(query);
             //setParameters est une methode pour des valeurs economie de ligne de code  
             cmd.SetParameters(people);
@@ -49,11 +49,11 @@ namespace BoxConnecte.repositories
         {
             string query = "UPDATE people SET FirstName = @FirstName,LastName = @LastName,Email = @Email,Birthdate = @Birthdate,Gsm = @Gsm ";
             Command cmd = new Command(query);
-            cmd.Parameters.Add("@FirstName", people.FirstName);
-            cmd.Parameters.Add("@LastName", people.LastName);
-            cmd.Parameters.Add("@Email", people.Email);
-            cmd.Parameters.Add("@Birthdate", people.Birthdate);
-            cmd.Parameters.Add("@Gsm", people.Gsm);
+            cmd.Parameters.Add("@firstName", people.FirstName);
+            cmd.Parameters.Add("@lastName", people.LastName);
+            cmd.Parameters.Add("@email", people.Email);
+            cmd.Parameters.Add("@birthdate", people.Birthdate);
+            cmd.Parameters.Add("@gsm", people.Gsm);
             return (_Connection.ExecuteNonQuery(cmd) == 1);
         }
     }
