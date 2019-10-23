@@ -14,7 +14,7 @@ namespace BoxConnecte.repositories
     {
         public override bool Delete(int id)
         {
-            string query = "DELETE FROM Address WHERE Id = @Id";
+            string query = "DELETE FROM Address WHERE ID = @Id";
             Command cmd = new Command(query);
             cmd.Parameters.Add("@Id", id);
             return _Connection.ExecuteNonQuery(cmd) == 1;
@@ -22,7 +22,7 @@ namespace BoxConnecte.repositories
 
         public override Address Get(int id)
         {
-            string query = "SELECT * FROM Address WHERE Id = @id";
+            string query = "SELECT * FROM Address WHERE ID = @id";
             Command cmd = new Command(query);
             cmd.AddParameter("@id", id);
             return _Connection.ExecuteReader(cmd, UniversalDbToEntityMapper.Mapper<Address>).FirstOrDefault();

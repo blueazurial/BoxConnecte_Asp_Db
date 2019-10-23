@@ -15,5 +15,6 @@ namespace BoxConnecte.Entities
         public DateTime Birthdate { get; set; }
         public int Gsm { get; set; }
         public int AddressId { get; set; }
+        public string Password { get; set; }
     }
 }
