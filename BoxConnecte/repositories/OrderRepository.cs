@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.repositories
 {
-    public class OrderRepository : BaseRepository<Order>
+    class OrderRepository : BaseRepository<Order>
     {
         public override bool Delete(int id)
         {
-            string query = "DELETE FROM Order WHERE Id = @Id";
+            string query = "DELETE FROM Order WHERE ID = @Id";
             Command cmd = new Command(query);
             cmd.Parameters.Add("@Id", id);
             return _Connection.ExecuteNonQuery(cmd) == 1;
@@ -30,7 +30,7 @@ namespace BoxConnecte.repositories
 
         public override int Insert(Order order)
         {
-            string query = " INSERT INTO order(Description,QrCode,DigiCode,DateDelivery,DateLimite,CustumerId,SellerId,OrderStatusId)OUTPUT inserted.id VALUES (@Description,@QrCode,@DigiCode,@DateDelivery,@DateLimite,@CustumerId,@SellerId,@OrderStatusId)";
+            string query = " INSERT INTO order(Description,QrCode,PswBox,OrderWithdrawn,NumberBox)OUTPUT inserted.id VALUES (@description,@qrcode,@pswBox,@orderwithdrawn,@numberbox)";
             Command cmd = new Command(query);
             //setParameters est une methode pour des valeurs economie de ligne de code  
             cmd.SetParameters(order);
@@ -40,16 +40,14 @@ namespace BoxConnecte.repositories
 
         public override bool Update(Order order)
         {
-            string query = "UPDATE Address SET Description = @Description, QrCode = @QrCode,DigiCode = @DigiCode,DateDelivery = @DateDelivery,DateLimite = @DateLimite,CustumerId = @CustumerId,SellerId = @SellerId,OrderStatusId = @OrderStatusId";
+            string query = "UPDATE Address SET Description = @Description, QrCode = @QrCode,PswBox = @pswbox,OrderWithdrawn = @orderwithdrawn,NumberBox = @NumberBox";
             Command cmd = new Command(query);
             cmd.Parameters.Add("@Description", order.Description);
             cmd.Parameters.Add("@QrCode", order.QrCode);
-            cmd.Parameters.Add("@DigiCode", order.DigiCode);
-            cmd.Parameters.Add("@DateDelivery", order.DateDelivery);
-            cmd.Parameters.Add("@DateLimite", order.DateLimite);
-            cmd.Parameters.Add("@CustumerId", order.CustumerId);
-            cmd.Parameters.Add("@SellerId", order.SellerId);
-            cmd.Parameters.Add("@OrderStatusId", order.OrderStatusId);
+            cmd.Parameters.Add("@PswBox", order.PswBox);
+            cmd.Parameters.Add("@OrderWithdrawn", order.OrderWithdrawn);
+            cmd.Parameters.Add("@NumberBox", order.NumberBox);
+
             return (_Connection.ExecuteNonQuery(cmd) == 1);
         }
     }

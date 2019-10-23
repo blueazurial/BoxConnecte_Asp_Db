@@ -5,5 +5,5 @@ CREATE PROCEDURE [dbo].[SP_Login]
 	@password NVARCHAR(255)
 AS
 BEGIN
-	SELECT Email,Id,Pseudo,'yolo' as [Password] FROM [User] WHERE Email = @email AND [Password] = dbo.Udf_Hash_Password (@password, @email)
+	SELECT Email,ID as [Password] FROM [People] WHERE Email = @email AND [Password] = dbo.Udf_Hash_Password (@password, @email)
 END

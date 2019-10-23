@@ -1,15 +1,16 @@
 ﻿--Personne
 CREATE TABLE [dbo].[People]
 (
-	[Id] INT NOT NULL IDENTITY PRIMARY KEY,
+	[ID] INT NOT NULL IDENTITY PRIMARY KEY,
 	--Prenom
-	[FirstName] NVARCHAR(50) NOT NULL,
+	[C_Nom] NVARCHAR(50) NOT NULL,
 	--Nom
 	[LastName] NVARCHAR(50) NOT NULL,
 	[Email] NVARCHAR(100) NOT NULL,
 	--Date d'anniversair
-	[Birthdate] DATETIME NOT NULL,
+	[Birthdate] DATETIME2 NULL,
 	[Gsm] INT NULL,
+	[Password] varbinary (max) not null,
 	[AddressId] INT NOT NULL REFERENCES [Address](Id)
 	 
 )

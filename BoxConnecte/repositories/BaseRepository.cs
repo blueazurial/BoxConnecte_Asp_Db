@@ -13,7 +13,7 @@ namespace BoxConnecte.repositories
 
         public BaseRepository()
         {
-            _Connection = new Connection("Data Source=TECHNOBEL;Initial Catalog=DbBoxConnecte;User ID=sa;Password=test1234=;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False", "System.Data.SqlClient");
+            _Connection = new Connection("Data Source=TECHNOBEL;Initial Catalog=SushiShop;User ID=sa;Password=test1234=;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False", "System.Data.SqlClient");
         }
         public abstract T Get(int id);
 

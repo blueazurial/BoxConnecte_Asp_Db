@@ -68,11 +68,7 @@
     <Build Include="Procedure\SP_Register.sql" />
     <Build Include="Procedure\Udf_Hash_Password.sql" />
     <Build Include="Tables\People\Address.sql" />
-    <Build Include="Tables\People\Customer.sql" />
     <Build Include="Tables\People\People.sql" />
-    <Build Include="Tables\People\Seller.sql" />
     <Build Include="Tables\Software\Order.sql" />
-    <Build Include="Tables\Software\OrderStatus.sql" />
-    <Build Include="Tables\Software\BoxStatus.sql" />
   </ItemGroup>
 </Project>

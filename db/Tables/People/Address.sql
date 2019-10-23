@@ -1,7 +1,7 @@
 ﻿--Adresse
 CREATE TABLE [dbo].[Address]
 (
-	[Id] INT NOT NULL IDENTITY PRIMARY KEY,
+	[ID] INT NOT NULL IDENTITY PRIMARY KEY,
 	[Number] INT NULL ,
 	--Rue
 	[Street] NVARCHAR(200) NOT NULL ,

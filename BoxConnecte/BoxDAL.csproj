@@ -44,25 +44,16 @@
     <Compile Include="Attributes\IgnoreOnInsert.cs" />
     <Compile Include="Attributes\IgnoreOnUpdate.cs" />
     <Compile Include="Entities\Address.cs" />
-    <Compile Include="Entities\BoxStatus.cs" />
-    <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Order.cs" />
-    <Compile Include="Entities\OrderStatus.cs" />
     <Compile Include="Entities\People.cs" />
-    <Compile Include="Entities\Seller.cs" />
     <Compile Include="Mappers\UniversalDbToEntityMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\AddressRepository.cs" />
-    <Compile Include="Repositories\BaseRepository.cs" />
-    <Compile Include="Repositories\BoxStatusRepository.cs" />
-    <Compile Include="Repositories\CustomerRepository.cs" />
-    <Compile Include="Repositories\OrderRepository.cs" />
-    <Compile Include="Repositories\OrderStatusRepository.cs" />
-    <Compile Include="Repositories\PeopleRepository.cs" />
+    <Compile Include="repositories\AddressRepository.cs" />
+    <Compile Include="repositories\BaseRepository.cs" />
+    <Compile Include="repositories\OrderRepository.cs" />
+    <Compile Include="repositories\PeopleRepository.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ToolBox - Final - Abstract Factory\DB\ToolBox.csproj">
       <Project>{a57bbc2c-b2f4-4c15-8d11-41e2e9bb96c9}</Project>

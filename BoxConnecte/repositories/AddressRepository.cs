@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.repositories
 {
-    public class AddressRepository : BaseRepository<Address>
+    class AddressRepository : BaseRepository<Address>
     {
         public override bool Delete(int id)
         {
@@ -22,23 +22,17 @@ namespace BoxConnecte.repositories
 
         public override Address Get(int id)
         {
-            string query = "SELECT * FROM Address WHERE Id = @id";
-            Command cmd = new Command(query);
-            cmd.AddParameter("@id", id);
-            return _Connection.ExecuteReader(cmd, UniversalDbToEntityMapper.Mapper<Address>).FirstOrDefault();
+            throw new NotImplementedException();
         }
 
         public override IEnumerable<Address> GetAll()
         {
-            string query = "SELECT * FROM Address ";
-            Command cmd = new Command(query);
-            //executeR me renvoie un idatareader et mon mapper fais les liens vers mon object 
-            return _Connection.ExecuteReader(cmd, UniversalDbToEntityMapper.Mapper<Address>);
+            throw new NotImplementedException();
         }
 
         public override int Insert(Address address)
         {
-            string query = " INSERT INTO Address(Number,Street,PostalCode,City)OUTPUT inserted.id VALUES (@number,@street,@postalcode,@city)";
+            string query = " INSERT INTO Address(Number,Street,PostalCode,City)OUTPUT inserted.id VALUES (@Number,@Street,@PostalCode,@City)";
             Command cmd = new Command(query);
             //setParameters est une methode pour des valeurs economie de ligne de code  
             cmd.SetParameters(address);
