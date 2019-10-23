@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.repositories
 {
-    class AddressRepository : BaseRepository<Address>
+    public class AddressRepository : BaseRepository<Address>
     {
         public override bool Delete(int id)
         {
@@ -48,8 +48,9 @@ namespace BoxConnecte.repositories
 
         public override bool Update(Address address)
         {
-            string query = "UPDATE Address SET Number = @Number,Street = @Street,PostalCode = @PostalCode,City = @City";
+            string query = "UPDATE Address SET Number = @Number,Street = @Street,PostalCode = @PostalCode,City = @City WHERE ID = @id";
             Command cmd = new Command(query);
+            cmd.Parameters.Add("@id", address.ID);
             cmd.Parameters.Add("@Number", address.Number);
             cmd.Parameters.Add("@Street", address.Street);
             cmd.Parameters.Add("@PostalCode", address.PostalCode);

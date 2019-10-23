@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.Entities
 {
-    class Order
+    public class Order
     {
         public int ID { get; set; }
         public string Description { get; set; }

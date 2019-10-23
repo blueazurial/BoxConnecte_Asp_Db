@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace BoxConnecte.Entities
 {
     //mes entité on tous les referance des tables corespondent 
-    class Address
+    public class Address
     {
         public int ID{ get; set; }
         public int Number { get; set; }

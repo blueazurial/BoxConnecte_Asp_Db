@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.repositories
 {
-    class OrderRepository : BaseRepository<Order>
+    public class OrderRepository : BaseRepository<Order>
     {
         public override bool Delete(int id)
         {
@@ -37,9 +37,8 @@ namespace BoxConnecte.repositories
 
         public override int Insert(Order order)
         {
-            string query = " INSERT INTO order(Description,QrCode,PswBox,OrderWithdrawn,NumberBox)OUTPUT inserted.id VALUES (@description,@qrcode,@pswBox,@orderwithdrawn,@numberbox)";
-            Command cmd = new Command(query);
-            //setParameters est une methode pour des valeurs economie de ligne de code  
+            string query = " INSERT INTO Order(Description,QrCode,PswBox,OrderWithdrawn,NumberBox) OUTPUT inserted.id VALUES (@description,@qrcode,@pswBox,@orderwithdrawn,@numberbox)";
+            Command cmd = new Command(query);  
             cmd.SetParameters(order);
 
             return (int)_Connection.ExecuteScalar(cmd);
@@ -47,8 +46,9 @@ namespace BoxConnecte.repositories
 
         public override bool Update(Order order)
         {
-            string query = "UPDATE Address SET Description = @Description, QrCode = @QrCode,PswBox = @pswbox,OrderWithdrawn = @orderwithdrawn,NumberBox = @NumberBox";
+            string query = "UPDATE Address SET Description = @Description, QrCode = @QrCode,PswBox = @pswbox,OrderWithdrawn = @orderwithdrawn,NumberBox = @NumberBox WHERE ID = @id";
             Command cmd = new Command(query);
+            cmd.Parameters.Add("@id", order.ID);
             cmd.Parameters.Add("@Description", order.Description);
             cmd.Parameters.Add("@QrCode", order.QrCode);
             cmd.Parameters.Add("@PswBox", order.PswBox);

@@ -21,7 +21,7 @@ namespace BoxConnecte.repositories
 
         public override People Get(int id)
         {
-            string query = "SELECT * FROM People WHERE ID = @id";
+            string query = "SELECT ID,C_Nom,LastName,Email,Birthdate,Gsm ,AddressId,' ' as [Password] FROM People WHERE ID = @id";
             Command cmd = new Command(query);
             cmd.AddParameter("@id", id);
             return _Connection.ExecuteReader(cmd, UniversalDbToEntityMapper.Mapper<People>).FirstOrDefault();
@@ -29,16 +29,13 @@ namespace BoxConnecte.repositories
 
         public override IEnumerable<People> GetAll()
         {
-            string query = "SELECT * FROM People ";
-            Command cmd = new Command(query);
-            //executeR me renvoie un idatareader et mon mapper fais les liens vers mon object 
-            return _Connection.ExecuteReader(cmd, UniversalDbToEntityMapper.Mapper<People>);
+            throw new Exception();
         }
 
         public override int Insert(People people)
         {
-            string query = " INSERT INTO People(FirstName,LastName,Email,Birthdate,Gsm,Password,AddressId)OUTPUT inserted.id VALUES (@firstName,@lastName,@email,@birthdate,@gsm,@password,@addressId)";
-            Command cmd = new Command(query);
+            string query = "SP_Register";
+            Command cmd = new Command(query, true );
             //setParameters est une methode pour des valeurs economie de ligne de code  
             cmd.SetParameters(people);
 
@@ -47,14 +44,16 @@ namespace BoxConnecte.repositories
 
         public override bool Update(People people)
         {
-            string query = "UPDATE people SET FirstName = @FirstName,LastName = @LastName,Email = @Email,Birthdate = @Birthdate,Gsm = @Gsm,Password = @password ";
+            string query = "UPDATE People SET C_Nom = @c_nom,LastName = @LastName,Email = @Email,Birthdate = @Birthdate,Gsm = @Gsm,[Password] = dbo.Udf_Hash_Password(@password,@email),AddressId = @addressid WHERE ID = @id";
             Command cmd = new Command(query);
-            cmd.Parameters.Add("@firstName", people.FirstName);
+            cmd.Parameters.Add("@id", people.ID);
+            cmd.Parameters.Add("@c_nom", people.C_Nom);
             cmd.Parameters.Add("@lastName", people.LastName);
             cmd.Parameters.Add("@email", people.Email);
             cmd.Parameters.Add("@birthdate", people.Birthdate);
             cmd.Parameters.Add("@gsm", people.Gsm);
             cmd.Parameters.Add("@password", people.Password);
+            cmd.Parameters.Add("@addressid", people.AddressId);
             return (_Connection.ExecuteNonQuery(cmd) == 1);
         }
     }
