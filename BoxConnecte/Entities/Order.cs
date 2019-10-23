@@ -8,7 +8,7 @@ namespace BoxConnecte.Entities
 {
     class Order
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string Description { get; set; }
         public int QrCode { get; set; }
         public int PswBox { get; set; }

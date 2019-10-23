@@ -9,7 +9,6 @@ CREATE TABLE [dbo].[Order]
 	[OrderWithdrawn] BIT NOT NULL DEFAULT 0,
 	[PswBox] int null
 
-	--date de la livraison
 	
 	
 
