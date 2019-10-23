@@ -1,4 +1,5 @@
 ﻿using BoxConnecte.Entities;
+using BoxConnecte.Mappers;
 using DB;
 using System;
 using System.Collections.Generic;
@@ -20,12 +21,18 @@ namespace BoxConnecte.repositories
 
         public override Order Get(int id)
         {
-            throw new NotImplementedException();
+            string query = "SELECT * FROM Order WHERE ID = @id";
+            Command cmd = new Command(query);
+            cmd.AddParameter("@id", id);
+            return _Connection.ExecuteReader(cmd,UniversalDbToEntityMapper.Mapper<Order>).FirstOrDefault(); ;
         }
 
         public override IEnumerable<Order> GetAll()
         {
-            throw new NotImplementedException();
+            string query = "SELECT * FROM Order ";
+            Command cmd = new Command(query);
+            //executeR me renvoie un idatareader et mon mapper fais les liens vers mon object 
+            return _Connection.ExecuteReader(cmd, UniversalDbToEntityMapper.Mapper<Order>);
         }
 
         public override int Insert(Order order)
