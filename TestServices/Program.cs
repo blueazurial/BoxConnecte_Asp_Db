@@ -41,13 +41,13 @@ namespace TestServices
             //personne1.AddressId = address1.ID;
             ////insert ma personne1 dans la db 
             //personne1.ID = insertPersonne1.Insert(personne1);
-            OrderRepository service = new OrderRepository();
-            Order commande = new Order();
-            commande.Description = "fausse commande 1";
-            commande.NumberBox = 1;
-            commande.OrderWithdrawn = true;
-            commande.PswBox = 1995;
-            service.Insert(commande);
+            //OrderRepository service = new OrderRepository();
+            //Order commande = new Order();
+            //commande.Description = "fausse commande 2";
+            //commande.NumberBox = 10;
+            //commande.OrderWithdrawn = true;
+            //commande.PswBox = 1969;
+            //service.Insert(commande);
 
             #endregion
 
@@ -67,6 +67,13 @@ namespace TestServices
             //address = serviceGET.Get(9);
 
             //Console.WriteLine(address.City);
+
+            //OrderRepository servicget = new OrderRepository();
+            //Order order = new Order();
+
+            //order = servicget.Get(1);
+            //Console.WriteLine(order.NumberBox);
+            //Console.ReadLine();
 
             ////////////////////////////GETALL///////////////////////////////////
 
@@ -89,6 +96,14 @@ namespace TestServices
             //    Console.WriteLine(item.Street);
             //}
 
+            //OrderRepository service = new OrderRepository();
+            //IEnumerable<Order> allOrder = service.GetAll();
+
+            //foreach (var item in allOrder)
+            //{
+            //    Console.WriteLine(item.ID);
+            //}
+            //Console.ReadLine();
             #endregion
 
             #region test delete people, commande et address
@@ -98,6 +113,9 @@ namespace TestServices
 
             //PeopleRepository supPeople = new PeopleRepository();
             //supPeople.Delete(6);
+
+            //OrderRepository service = new OrderRepository();
+            //service.Delete(1);
 
             #endregion
 
@@ -115,10 +133,17 @@ namespace TestServices
             //address = service.Get(4);
             //address.City = "moune4564";
             //service.Update(address);
+            //////////////////////////commande/////////////////////////////////////////////
+            //OrderRepository service = new OrderRepository();
+            //Order order = new Order();
+            //order = service.Get(2);
+            //order.Description = "tous les test on reussi yes yes yes on y est presque 💪";
+            //service.Update(order);
+        
 
             #endregion
 
-            
+
         }
     }
 }
