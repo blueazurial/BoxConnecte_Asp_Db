@@ -13,7 +13,7 @@ namespace BoxConnecte.Entities
         public string LastName { get; set; }
         public string Email { get; set; }
         public DateTime Birthdate { get; set; }
-        public int Gsm { get; set; }
+        public string Gsm { get; set; }
         public int AddressId { get; set; }
         public string Password { get; set; }
     }

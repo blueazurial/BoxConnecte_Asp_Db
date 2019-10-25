@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.Mappers
 {
-    class UniversalDbToEntityMapper
+    //mapper utiliser que pour la db 
+    public class UniversalDbToEntityMapper
     {
         public static T Mapper<T>(IDataReader reader) where T : new() // Requires the database columns to have the same name as T's properties
         {

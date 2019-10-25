@@ -8,8 +8,8 @@ CREATE TABLE [dbo].[People]
 	[LastName] NVARCHAR(50) NOT NULL,
 	[Email] NVARCHAR(100) NOT NULL,
 	--Date d'anniversair
-	[Birthdate] DATETIME NOT NULL,
-	[Gsm] INT NULL,
+	[Birthdate] DATETIME not NULL,
+	[Gsm] NVARCHAR(50) NULL,
 	[Password] varbinary (max) not null,
 	[AddressId] INT NOT NULL REFERENCES [Address](Id)
 	 

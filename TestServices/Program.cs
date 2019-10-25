@@ -16,16 +16,19 @@ namespace TestServices
             ////test des service 
             //// insert de la table People pour insert une personne 
             ////pour ca une crée un new PeopleRepository 
-            //PeopleRepository insertPersonne1 = new PeopleRepository();
-            ////on crée une nouvelle personne 
-            //People personne1 = new People();
-            ////on remplis les chan
-            //personne1.C_Nom = "maud";
-            //personne1.LastName = "does";
-            //personne1.Gsm = 0445841809;
-            //personne1.Email = "youyyyd@hotmail.com";
-            //personne1.Birthdate = new DateTime(1895, 10, 04);
-            //personne1.Password = "maud";
+            PeopleRepository insertPersonne1 = new PeopleRepository();
+            //on crée une nouvelle personne 
+            People personne1 = new People();
+            //on remplis les chan
+            personne1.C_Nom = "maud";
+            personne1.LastName = "does";
+            personne1.Gsm = 0445841809;
+            personne1.Email = "youyyyd@hotmail.com";
+            personne1.Birthdate = new DateTime(1895, 10, 04);
+            personne1.Password = "maud";
+            personne1.AddressId = 2;
+            insertPersonne1.Insert(personne1);
+
             ////insert une adresse 
             //AddressRepository insertaddress1 = new AddressRepository();
             ////on crée une nouvelle adresse qu on vas lie a la personne 1
@@ -139,7 +142,7 @@ namespace TestServices
             //order = service.Get(2);
             //order.Description = "tous les test on reussi yes yes yes on y est presque 💪";
             //service.Update(order);
-        
+
 
             #endregion
 
