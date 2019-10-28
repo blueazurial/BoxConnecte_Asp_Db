@@ -1,18 +1,33 @@
 <nb-layout>
+  
+  <!--bar du dessu-->
+    <nb-layout-header fixed>
+        <h1>Box Connecter</h1>
+    </nb-layout-header>
+  
+  
+    <!--bar de gauche-->
+    <nb-sidebar>
+      <app-nav>
+        
+      </app-nav>
+    
+    </nb-sidebar>
 
-  <nb-layout-header fixed>
-  <!-- Insert header here -->
-  </nb-layout-header>
 
-  <nb-layout-column>
-
-    <!--router-outlet ces un component qui change de rendu selon
+    <nb-layout-column>
+      <!--router-outlet ces un component qui change de rendu selon
        l url introduit dans la barre d'address -->
-    <router-outlet></router-outlet>
-  </nb-layout-column>
+      <!--le central-->
+      
+      <router-outlet></router-outlet>
+    </nb-layout-column>
 
-  <nb-layout-footer fixed>
-  <!-- Insert footer here -->
-  </nb-layout-footer>
 
-</nb-layout>
+  <!--bar du dessou-->
+    <nb-layout-footer fixed><p> Project réaliser par Benjamain Dubois et Maud de Goes élève a Thechnobel </p>
+    <!-- Insert footer here -->
+    </nb-layout-footer>
+  
+  
+  </nb-layout>
