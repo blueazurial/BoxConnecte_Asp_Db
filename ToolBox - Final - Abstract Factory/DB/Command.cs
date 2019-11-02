@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace DB
 {
+    //la class qui vas etre executer dans sql et la connexion vas recuperer le resulta 
     public class Command
     {
         #region Properties

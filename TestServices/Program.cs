@@ -22,35 +22,35 @@ namespace TestServices
             //on remplis les chan
             personne1.C_Nom = "maud";
             personne1.LastName = "does";
-            personne1.Gsm = 0445841809;
+            personne1.Gsm = "0445841809";
             personne1.Email = "youyyyd@hotmail.com";
             personne1.Birthdate = new DateTime(1895, 10, 04);
             personne1.Password = "maud";
             personne1.AddressId = 2;
             insertPersonne1.Insert(personne1);
 
-            ////insert une adresse 
-            //AddressRepository insertaddress1 = new AddressRepository();
-            ////on crée une nouvelle adresse qu on vas lie a la personne 1
-            //Address address1 = new Address();
-            ////on ramplis chaque chan 
-            //address1.City = "voo";
-            //address1.Number = 2;
-            //address1.PostalCode = 1000;
-            //address1.Street = "rue toutuit";
-            ////j utilise insertaddress1 le repository crée au prealable .insert pour apliquer la methode insert sur l object addresse1
-            //address1.ID = insertaddress1.Insert(address1);
-            ////j insert id de l'object addresse1 pmour qu'il corespond a l'addresseId de personne1 
-            //personne1.AddressId = address1.ID;
-            ////insert ma personne1 dans la db 
-            //personne1.ID = insertPersonne1.Insert(personne1);
-            //OrderRepository service = new OrderRepository();
-            //Order commande = new Order();
-            //commande.Description = "fausse commande 2";
-            //commande.NumberBox = 10;
-            //commande.OrderWithdrawn = true;
-            //commande.PswBox = 1969;
-            //service.Insert(commande);
+            //insert une adresse 
+            AddressRepository insertaddress1 = new AddressRepository();
+            //on crée une nouvelle adresse qu on vas lie a la personne 1
+            Address address1 = new Address();
+            //on ramplis chaque chan 
+            address1.City = "voo";
+            address1.Number = 2;
+            address1.PostalCode = 1000;
+            address1.Street = "rue toutuit";
+            //j utilise insertaddress1 le repository crée au prealable .insert pour apliquer la methode insert sur l object addresse1
+            address1.ID = insertaddress1.Insert(address1);
+            //j insert id de l'object addresse1 pmour qu'il corespond a l'addresseId de personne1 
+            personne1.AddressId = address1.ID;
+            //insert ma personne1 dans la db 
+            personne1.ID = insertPersonne1.Insert(personne1);
+            OrderRepository service = new OrderRepository();
+            Order commande = new Order();
+            commande.Description = "fausse commande 2";
+            commande.NumberBox = 10;
+            commande.OrderWithdrawn = true;
+            commande.PswBox = 1969;
+            service.Insert(commande);
 
             #endregion
 

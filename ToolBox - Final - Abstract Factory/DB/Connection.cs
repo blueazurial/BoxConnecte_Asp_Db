@@ -6,7 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.Common;
-
+//il s'occupe de faire la connexion vers le server sql et il vas executer un object command 
+// command est passe en argument dans la connexion 
+//la class commande vas etre executer par la connexion dans sql et la connexion vas recuperer le resulta 
 namespace DB
 {
     public class Connection

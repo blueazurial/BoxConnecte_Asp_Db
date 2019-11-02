@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace BoxConnecte.Mappers
     //mapper utiliser que pour la db 
     public class UniversalDbToEntityMapper
     {
-        public static T Mapper<T>(IDataReader reader) where T : new() // Requires the database columns to have the same name as T's properties
+        public static T Mapper<T>(IDataReader reader) where T : new()// Requires the database columns to have the same name as T's properties
         {
             List<PropertyInfo> properties = typeof(T).GetProperties().ToList<PropertyInfo>();
             PropertyInfo[] removables = new object().GetType().GetProperties();
