@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { PoepleRepository } from 'src/app/services/poeple.service';
-import { type } from 'os';
+import { PoepleService } from 'src/app/services/people.service';
+
+
 
 @Component({
   selector: 'app-inscription',
@@ -19,13 +20,36 @@ export class InscriptionComponent implements OnInit {
     this._forminscription = v;
   }
 
-  constructor(private peopleInscription: PoepleRepository) { 
+  constructor(private peopleInscription: PoepleService) { 
     this.forminscription = new FormGroup(
       {
         C_Nom: new FormControl(null,{validators: [
           //verification (condition)
-          Validators.maxLength(50)
+          Validators.maxLength(50),
+          Validators.required
         ]}),
+         LastName: new FormControl(null,{validators:[
+           Validators.maxLength(50),
+           Validators.required
+
+         ]}),
+         Email: new FormControl(null,{validators:[
+           Validators.maxLength(50),
+           Validators.required
+         ]}),
+         Birthdate: new FormControl(null,{validators:[
+           Validators.required
+         ]}),
+         Gsm: new FormControl(null,{validators:[
+           Validators.maxLength(50),
+           
+
+         ]}),
+         Password: new FormControl(null,{validators:[
+          Validators.maxLength(50),
+          Validators.required
+
+        ]})
       })
   }
 
