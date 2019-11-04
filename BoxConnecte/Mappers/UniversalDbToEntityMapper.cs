@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace BoxConnecte.Mappers
 {
+    //c est une fonction au quel on envoi en argument un IDatareader et qui nous retourn un object de c#
+    // qui correspond au propieté dans la db dans la ligne du IDatareader actuelle
     //mapper utiliser que pour la db 
     public class UniversalDbToEntityMapper
     {
@@ -16,11 +18,11 @@ namespace BoxConnecte.Mappers
         {
             List<PropertyInfo> properties = typeof(T).GetProperties().ToList<PropertyInfo>();
             PropertyInfo[] removables = new object().GetType().GetProperties();
-            foreach (PropertyInfo rem in removables) //removes unwanted properties
+            foreach (PropertyInfo rem in removables) //rem dans le tableau removables
             {
                 properties.Remove(rem);
             }
-            T retour = new T(); //item to return
+            T retour = new T(); 
             foreach (PropertyInfo prop in properties)
             {
 

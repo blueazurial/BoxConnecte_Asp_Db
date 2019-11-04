@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DB
+namespace DB 
 {
     //la class qui vas etre executer dans sql et la connexion vas recuperer le resulta 
     public class Command
@@ -60,7 +60,7 @@ namespace DB
         }
         public void SetParameters(object o)
         {
-            //??????????????????????????????????????????????????????????????
+            
             List<PropertyInfo> properties = o.GetType().GetProperties().ToList<PropertyInfo>();
             PropertyInfo[] removables = new object().GetType().GetProperties();
             foreach (PropertyInfo rem in removables)
